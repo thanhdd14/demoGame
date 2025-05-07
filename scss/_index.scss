@@ -1,0 +1,223 @@
+@use "vars" as *;
+
+.sec-mv{
+	background: url(../img/bg-01.jpg) no-repeat;
+	background-size: cover;
+	background-position: top center;
+	padding: 125px 0 240px;
+}
+
+.mv-block{
+	width: 100%;
+	max-width: 1237px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	z-index: 1;
+	&__ct{
+		width: 50%;
+		max-width: 373px;
+		padding: 0 0 0 14px;
+		margin-bottom: 40px;
+	}
+	&__menu{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+		&-item{
+			a{
+
+			}
+		}
+		&-icon{
+			position: absolute;
+			left: 35px;
+			@include v-align;
+		}
+	}
+}
+
+
+.heading{
+	position: relative;
+	margin-bottom: 36px;
+	&-bg{
+		max-width: 894px;
+		margin: 0 auto;
+		img{
+			width: 100%;
+		}
+	}
+	.c-ttl__01{
+		position: absolute;
+		top: 66%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+	}
+}
+
+
+.sec-gift{
+	background: url(../img/bg-02.png) no-repeat;
+	background-size: cover;
+	background-position: top center;
+	padding: 0 0 70px;
+}
+.gift-block{
+	&__view{
+		display: block;
+		max-width: 462px;
+		height: 83px;
+		padding: 15px 0 0;
+		margin: 0 auto 90px;
+		position: relative;
+		background: url("../img/bg-note.png")no-repeat;
+		background-size: 100%;
+		text-align: center;
+		&-ttl{
+			display: block;
+			position: absolute;
+			top: -13px;
+			left: 0;
+			right: 0;
+			@include font-size(22);
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #4b504e;
+			span{
+				background: #e9eff1;
+				padding: 0 20px;
+			}
+		}
+		&-number{
+			display: block;
+			text-align: center;
+			@include font-size(50);
+			color: #489e7c;
+			line-height: 1;
+			font-weight: bold;
+		}
+	}
+	&__show{
+		&-line{
+			position: relative;
+			&--custom{
+				display: inline-block;
+				position: absolute;
+				@include v-align;
+				left: 28px;
+				background: #5ca780;
+				height: 5px;
+			}
+		}
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		gap: 4%;
+		padding: 0 2%;
+		margin: -115px 0 68px;
+		&-item{
+			position: relative;
+			&:nth-child(even){
+				transform: translate(0, 25px);
+			}
+		}
+		&-box{
+
+		}
+		&-ct{
+			position: absolute;
+			top: 35%;
+			left: 0;
+			right: 0;
+			@include font-size(15);
+			line-height: 1;
+			text-align: center;
+			font-weight: bold;
+			color: #465750;
+			text-transform: uppercase;
+			span{
+				display: block;
+				@include font-size(30);
+				padding: 5px 0 0;
+			}
+		}
+		&-note{
+			display: block;
+			position: absolute;
+			top: 55.5%;
+			left: 25%;
+			right: 25%;
+		}
+	}
+}
+
+.sec-procedure{
+	background: url(../img/bg-03.png) no-repeat;
+	background-size: cover;
+	background-position: top center;
+	margin: -27px 0 0;
+	padding: 88px 0 0;
+}
+.procedure-box{
+	background: url("../img/bg-note-02.png")no-repeat;
+	background-size: 100%;
+	height: 86px;
+	position: relative;
+	text-align: center;
+	@include font-size(22);
+	font-weight: bold;
+	color: #408765;
+	@include flex(center,center,wrap);
+	padding: 0 20px;
+
+	&__left{
+		width: 40%;
+		text-align: left;
+		@include flex(0,center,wrap);
+		span{
+			color: #079c46;
+			text-transform: uppercase;
+			max-width: 230px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			display: inline-block;
+		}
+	}
+	&__right{
+		width: 60%;
+	}
+	&__btn{
+		color: #eaf0f2;
+		width: 170px;
+		height: 53px;
+		@include flex(center,center);
+		position: absolute;
+		right: 17px;
+		@include v-align;
+		background: url("../img/menu-02.png")no-repeat;
+		background-size: 100%;
+		&:hover{
+			opacity: 1;
+			background: url("../img/menu-02-hv.png")no-repeat;
+			background-size: 100%;
+		}
+	}
+	&__note{
+		@include flex(end,center,wrap);
+		margin: 0 -5px;
+		li{
+			width: 25%;
+			padding: 0 5px;
+			.procedure-box__btn{
+				position: static;
+				top: auto;
+				transform: translateY(0);
+			}
+		}
+
+	}
+}
