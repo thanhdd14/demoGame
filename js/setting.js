@@ -44,41 +44,45 @@ $('.js-mobile').on('click', function(){
 
 
 
-// $(window).on("load resize",function () {
-//     $("main").css("padding-top",$("#header").outerHeight());
-// });
+
+$(".procedure-show").slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+});
 
 
+$('.gallery-show__for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.gallery-show__nav',
+    infinite: true,
+    autoplay: true,
+    focusOnSelect: true,
+    pauseOnHover:false,
+});
+$('.gallery-show__nav').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    asNavFor: '.gallery-show__for',
+    dots: false,
+    focusOnSelect: true,
+    infinite: true,
+});
 
-//siider-home
-// $('.js-mv-slider').slick({
-//     dots: false,
-//     focusOnSelect: true,
-//     pauseOnHover:false,
-//     infinite: true,
-//     speed: 500,
-//     fade: true,
-//     autoplay: false,
-//     cssEase: 'linear'
-// });
-
-// $(".js-product").slick({
-// 	slidesToShow: 3,
-// 	slidesToScroll: 1,
-// 	autoplay: true,
-// 	autoplaySpeed: 2000,
-	// prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
-	// nextArrow:"<button type='button' class='slick-next pull-right'></button>"
-// });
-
-
-// $(".js-product").slick({
-//   slidesToShow: item,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-// });
-
+$('.work-banner').slick({
+    dots: true,
+    focusOnSelect: true,
+    pauseOnHover:false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: false,
+    cssEase: 'linear'
+});
 
 // $(function () {
 //     objectFitImages('img');
