@@ -24,16 +24,6 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 10px;
-		&-item{
-			a{
-
-			}
-		}
-		&-icon{
-			position: absolute;
-			left: 35px;
-			@include v-align;
-		}
 	}
 }
 
@@ -507,21 +497,27 @@
 }
 
 .sec-work{
-	background: url("../img/bg-05.png")no-repeat;
-	background-size: cover;
-}
-.work-banner{
-	position: relative;
+	padding: 100px 0 230px;
+	z-index: 3;
 	&:before{
 		content: "";
 		position: absolute;
-		top: -10px;
-		left: -10px;
-		right: -10px;
-		bottom: -10px;
-		background: url("../img/bg-custom.png")no-repeat;
-		background-size: 100% 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url("../img/bg-05.png")no-repeat;
+		background-size: cover;
 	}
+	.inner{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.work-banner{
+	position: relative;
+	margin-bottom: 60px;
 	.slick-arrow{
 		width: 58px;
 		height: 68px;
@@ -532,20 +528,98 @@
 		&.slick-prev{
 			background: url("../img/prev-02.png")no-repeat;
 			background-size: 100%;
-			left: -90px;
+			left: -70px;
 		}
 		&.slick-next{
 			background: url("../img/next-02.png")no-repeat;
 			background-size: 100%;
-			right: -90px;
+			right: -70px;
+		}
+	}
+	.slick-list{
+		margin-bottom: 50px;
+	}
+	.slick-dots{
+		position: relative;
+		bottom: auto;
+		@include flex(center,center,wrap);
+		&:before,&:after{
+			content: "";
+			width: 30%;
+			height: 14px;
+			position: absolute;
+			@include v-align;
+		}
+		&:before{
+			background: url("../img/bf-03.png")no-repeat;
+			background-position: top left;
+			background-size: 400px;
+			left: 0;
+		}
+		&:after{
+			background: url("../img/af-03.png")no-repeat;
+			background-position: top right;
+			background-size: 400px;
+			right: 0;
+		}
+		li{
+			margin: 0 8px;
+			button{
+				width: 37px;
+				height: 37px;
+				&:before{
+					content: "";
+					width: auto;
+					height: auto;
+					border: none;
+					border-radius: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background: url(../img/dos.png) no-repeat;
+					background-size: 100%;
+					-o-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+				}
+			}
+			&.slick-active{
+				button{
+					&:before{
+						top: -10px;
+						left: -10px;
+						right: -10px;
+						bottom: -10px;
+						background: url("../img/dos-active.png")no-repeat;
+						background-size: 100%;
+					}
+				}
+			}
 		}
 	}
 	&__item{
 		position: relative;
 		z-index: 2;
-		border: 7px solid #a3d9ba;
+		padding: 10px;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: url("../img/bg-custom.png")no-repeat;
+			background-size: 100% 100%;
+		}
 		img{
 			width: 100%;
+			border: 7px solid #a3d9ba;
 		}
 	}
+}
+.work-links{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
 }

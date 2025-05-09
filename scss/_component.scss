@@ -95,6 +95,7 @@ Component
 	&__01{
 		@include flex(center,center,wrap);
 		height: 83px;
+		width: 100%;
 		max-width: 394px;
 		margin: 0 auto;
 		line-height: 1;
@@ -118,26 +119,53 @@ Component
 			background: url("../img/btn-hv.png")no-repeat;
 			background-size: 100%;
 		}
+		&-icon{
+			position: absolute;
+			width: 17%;
+			left: 35px;
+			@include v-align;
+		}
 	}
+	&__02{
+		@include flex(center,center,wrap);
+		height: 70px;
+		width: 100%;
+		max-width: 345px;
+		margin: 0 auto;
+		line-height: 1;
+		@include font-size(20);
+		text-align: center;
+		color: white;
+		font-weight: 500;
+		position: relative;
+		background: url("../img/btn-02.png")no-repeat;
+		background-size: 100%;
+		>span{
+			display: block;
+			span{
+				color: #fff3a0;
+			}
+		}
+		strong{
+			display: block;
+		}
+		&:hover{
+			opacity: 1;
+			background: url("../img/btn-02-hv.png")no-repeat;
+			background-size: 100%;
+		}
+		&-icon{
+			position: absolute;
+			width: 17%;
+			left: 35px;
+			@include v-align;
+		}
+	}
+
 }
 
 
-//fade up
-.js-scrollin {
-	opacity: 0;
-	-webkit-transform: translate(0, 70px);
-	-ms-transform: translate(0, 70px);
-	transform: translate(0, 70px);
-	&.active{
-		opacity: 1;
-		-webkit-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
-		-webkit-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		-o-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-	}
-}
+
 
 
 

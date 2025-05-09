@@ -115,6 +115,84 @@
 	}
 }
 
+.float-right{
+	position: fixed;
+	@include v-align;
+	right: 0;
+	&__menu{
+		position: relative;
+		margin-bottom: 10px;
+		ul{
+			position: absolute;
+			top: 69%;
+			right: 12%;
+			left: 43%;
+			li{
+				margin-bottom: 3px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				a{
+					@include font-size(16);
+					text-transform: uppercase;
+					height: 47px;
+					background: url("../img/btn-03.png")no-repeat;
+					background-size: 100%;
+					&:hover{
+						background: url("../img/btn-03-hv.png")no-repeat;
+						background-size: 100%;
+					}
+				}
+			}
+		}
+	}
+	&__top{
+		display: block;
+		width: 70px;
+		position: relative;
+		margin-left: auto;
+		margin-right: 25%;
+		img{
+			@include smooth-transition;
+		}
+		.img-01{
+
+		}
+		.img-02{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			visibility: hidden;
+		}
+		&:hover{
+			opacity: 1;
+			.img-01{
+				opacity: 0;
+				visibility: hidden;
+			}
+			.img-02{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	&__gift{
+		width: 234px;
+		margin-left: auto;
+		right: 0;
+		position: relative;
+		.c-btn__01{
+			position: absolute;
+			bottom: 42px;
+			right: 11%;
+			font-size: 1.7rem;
+			width: 180px;
+			height: 40px;
+		}
+	}
+}
 
 .js-locked {
 	overflow: hidden;

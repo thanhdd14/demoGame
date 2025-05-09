@@ -84,6 +84,10 @@ $('.work-banner').slick({
     cssEase: 'linear'
 });
 
+$(function(){
+    $('.js-bar').slimScroll();
+});
+
 // $(function () {
 //     objectFitImages('img');
 // });
