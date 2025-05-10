@@ -1,9 +1,11 @@
 <main class="page-<%= pageData.template %>">
 	<section class="sec-mv">
+		<div class="mv-video">
+			<video class="pc" src="<%= RELATIVE_PATH %>img/mv.mp4" loop autoplay muted webkit-playsinline playsinline ></video>
+			<video class="sp" src="<%= RELATIVE_PATH %>img/mv-sp.mp4" loop autoplay muted webkit-playsinline playsinline ></video>
+		</div>
 		<div class="mv-block">
-			<h1 class="mv-block__ct">
-				<img src="<%= RELATIVE_PATH %>img/mv-note.png" alt="Võ Hiệp Truyền Kỳ II">
-			</h1>
+
 			<ul class="mv-block__menu">
 				<li class="mv-block__menu-item">
 					<a href="" class="c-btn__01">
@@ -12,7 +14,7 @@
 					</a>
 				</li>
 				<li class="mv-block__menu-item">
-					<a href="" class="c-btn__01">
+					<a href="" class="c-btn__01 js-popup-ct">
 						<span class="c-btn__01-icon"><img src="<%= RELATIVE_PATH %>img/icon-02.png" alt="icon" ></span>
 						<span>
 							thông tin<br>
@@ -21,7 +23,7 @@
 					</a>
 				</li>
 				<li class="mv-block__menu-item">
-					<a href="" class="c-btn__01">
+					<a href="" class="c-btn__01 js-popup-noti">
 						<span class="c-btn__01-icon"><img src="<%= RELATIVE_PATH %>img/icon-03.png" alt="icon" ></span>
 						<span>Tải Game</span>
 					</a>
@@ -34,7 +36,8 @@
 			<div class="gift-block">
 				<div class="heading">
 					<div class="heading-bg">
-						<img src="<%= RELATIVE_PATH %>img/heading-01.png" alt="hẹn ước võ hiệp - quà quý trao tay">
+						<img src="<%= RELATIVE_PATH %>img/heading-01.png" alt="hẹn ước võ hiệp - quà quý trao tay" class="pc">
+						<img src="<%= RELATIVE_PATH %>img/heading-01-sp.png" alt="hẹn ước võ hiệp - quà quý trao tay" class="sp">
 					</div>
 				</div>
 				<div class="gift-block__view">
@@ -47,9 +50,10 @@
 						<span class="gift-block__show-line--custom" style="width: 40%"></span>
 					</div>
 					<ul class="gift-block__list">
-						<li class="gift-block__list-item">
+						<li class="gift-block__list-item js-popup-gift">
 							<div class="gift-block__list-box">
-								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="line">
+								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="img" class="pc">
+								<img src="<%= RELATIVE_PATH %>img/item-gift-sp.png" alt="img" class="sp">
 							</div>
 							<div class="gift-block__list-ct">
 								quà mốc
@@ -59,9 +63,10 @@
 								<img src="<%= RELATIVE_PATH %>img/gift-01.png" alt="gift">
 							</div>
 						</li>
-						<li class="gift-block__list-item">
+						<li class="gift-block__list-item js-popup-noti02">
 							<div class="gift-block__list-box">
-								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="line">
+								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="img" class="pc">
+								<img src="<%= RELATIVE_PATH %>img/item-gift-sp.png" alt="img" class="sp">
 							</div>
 							<div class="gift-block__list-ct">
 								quà mốc
@@ -73,7 +78,8 @@
 						</li>
 						<li class="gift-block__list-item">
 							<div class="gift-block__list-box">
-								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="line">
+								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="img" class="pc">
+								<img src="<%= RELATIVE_PATH %>img/item-gift-sp.png" alt="img" class="sp">
 							</div>
 							<div class="gift-block__list-ct">
 								quà mốc
@@ -85,7 +91,8 @@
 						</li>
 						<li class="gift-block__list-item">
 							<div class="gift-block__list-box">
-								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="line">
+								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="img" class="pc">
+								<img src="<%= RELATIVE_PATH %>img/item-gift-sp.png" alt="img" class="sp">
 							</div>
 							<div class="gift-block__list-ct">
 								quà mốc
@@ -97,7 +104,8 @@
 						</li>
 						<li class="gift-block__list-item">
 							<div class="gift-block__list-box">
-								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="line">
+								<img src="<%= RELATIVE_PATH %>img/item-gift.png" alt="img" class="pc">
+								<img src="<%= RELATIVE_PATH %>img/item-gift-sp.png" alt="img" class="sp">
 							</div>
 							<div class="gift-block__list-ct">
 								quà mốc
@@ -109,7 +117,7 @@
 						</li>
 					</ul>
 				</div>
-				<a href="" class="c-btn__01">
+				<a href="" class="c-btn__01 js-popup-forget">
 					<span>Hẹn ước <span>&nbsp;ngay</span></span>
 				</a>
 			</div>
@@ -119,13 +127,14 @@
 		<div class="inner">
 			<div class="heading">
 				<div class="heading-bg">
-					<img src="<%= RELATIVE_PATH %>img/heading-02.png" alt="thái hư giáng thế - vạn bảo quy lai">
+					<img src="<%= RELATIVE_PATH %>img/heading-02.png" alt="thái hư giáng thế - vạn bảo quy lai" class="pc">
+					<img src="<%= RELATIVE_PATH %>img/heading-02-sp.png" alt="thái hư giáng thế - vạn bảo quy lai" class="sp">
 				</div>
 			</div>
 			<div class="procedure-heading">
 				<div class="procedure-box">
 					<p>Xin vui lòng đăng nhập để tham gia sự kiện này</p>
-					<a href="" class="procedure-box__btn">Đăng nhập</a>
+					<a href="" class="procedure-box__btn js-popup-login">Đăng nhập</a>
 				</div>
 				<div class="procedure-box" >
 					<div class="procedure-box__left">
@@ -140,10 +149,10 @@
 								<a href="" class="procedure-box__btn">Thể lệ</a>
 							</li>
 							<li>
-								<a href="" class="procedure-box__btn">Nhận lượt</a>
+								<a href="" class="procedure-box__btn js-popup-task">Nhận lượt</a>
 							</li>
 							<li>
-								<a href="" class="procedure-box__btn">Lịch sử</a>
+								<a href="" class="procedure-box__btn js-popup-history">Lịch sử</a>
 							</li>
 						</ul>
 					</div>
@@ -154,13 +163,14 @@
 				<div class="procedure-show">
 					<div class="procedure-show__item procedure-show__item--left">
 						<div class="procedure-show__bg">
-							<img src="<%= RELATIVE_PATH %>img/item-left.png" alt="img">
+							<img src="<%= RELATIVE_PATH %>img/item-left.png" alt="img" class="pc">
+							<img src="<%= RELATIVE_PATH %>img/item-left-sp.png" alt="img" class="sp">
 							<div class="procedure-show__block">
 								<h3 class="procedure-show__block-ttl">
 									cây bát nhã nhỏ
 								</h3>
 								<div class="procedure-show__block-img">
-									<img src="<%= RELATIVE_PATH %>img/tree-lv2.png" alt="img">
+									<img src="<%= RELATIVE_PATH %>img/cayvua.gif" alt="img">
 								</div>
 								<div class="procedure-show__block-note">
 									Độ trưởng thành
@@ -174,13 +184,14 @@
 					</div>
 					<div class="procedure-show__item procedure-show__item--tight">
 						<div class="procedure-show__bg">
-							<img src="<%= RELATIVE_PATH %>img/item-right.png" alt="img">
+							<img src="<%= RELATIVE_PATH %>img/item-right.png" alt="img" class="pc">
+							<img src="<%= RELATIVE_PATH %>img/item-right-sp.png" alt="img" class="sp">
 							<div class="procedure-show__block">
 								<h3 class="procedure-show__block-ttl">
 									cây bát nhã Lớn
 								</h3>
 								<div class="procedure-show__block-img">
-									<img src="<%= RELATIVE_PATH %>img/tree-lv3.png" alt="img">
+									<img src="<%= RELATIVE_PATH %>img/cayto.gif" alt="img">
 								</div>
 								<div class="procedure-show__block-note">
 									Độ trưởng thành
@@ -194,8 +205,9 @@
 
 					</div>
 				</div>
-				<div class="procedure-show__bg">
-					<img src="<%= RELATIVE_PATH %>img/procedure-af.png" alt="img">
+				<div class="procedure-show__custom">
+					<img src="<%= RELATIVE_PATH %>img/procedure-af.png" alt="img" class="pc">
+					<img src="<%= RELATIVE_PATH %>img/procedure-af-sp.png" alt="img" class="sp">
 				</div>
 			</div>
 		</div>
@@ -204,7 +216,8 @@
 		<div class="inner">
 			<div class="heading mb0">
 				<div class="heading-bg">
-					<img src="<%= RELATIVE_PATH %>img/heading-03.png" alt="thất đại môn phái">
+					<img src="<%= RELATIVE_PATH %>img/heading-03.png" alt="thất đại môn phái" class="pc">
+					<img src="<%= RELATIVE_PATH %>img/heading-03-sp.png" alt="thất đại môn phái" class="sp">
 				</div>
 			</div>
 			<div class="gallery-show">
@@ -309,7 +322,7 @@
 							<div class="gallery-block__bg-show">
 								<img src="<%= RELATIVE_PATH %>img/bg-show.png" alt="img">
 							</div>
-							<div class="gallery-block__img">
+							<div class="gallery-block__img gallery-block__img--04">
 								<img src="<%= RELATIVE_PATH %>img/show-04.png" alt="img">
 							</div>
 							<div class="gallery-block__video">
@@ -336,7 +349,7 @@
 							<div class="gallery-block__bg-show">
 								<img src="<%= RELATIVE_PATH %>img/bg-show.png" alt="img">
 							</div>
-							<div class="gallery-block__img gallery-block__img--othe">
+							<div class="gallery-block__img gallery-block__img--05">
 								<img src="<%= RELATIVE_PATH %>img/show-05.png" alt="img">
 							</div>
 							<div class="gallery-block__video">
@@ -363,7 +376,7 @@
 							<div class="gallery-block__bg-show">
 								<img src="<%= RELATIVE_PATH %>img/bg-show.png" alt="img">
 							</div>
-							<div class="gallery-block__img">
+							<div class="gallery-block__img gallery-block__img--06">
 								<img src="<%= RELATIVE_PATH %>img/show-06.png" alt="img">
 							</div>
 							<div class="gallery-block__video">
@@ -390,7 +403,7 @@
 							<div class="gallery-block__bg-show">
 								<img src="<%= RELATIVE_PATH %>img/bg-show.png" alt="img">
 							</div>
-							<div class="gallery-block__img">
+							<div class="gallery-block__img gallery-block__img--07">
 								<img src="<%= RELATIVE_PATH %>img/show-07.png" alt="img">
 							</div>
 							<div class="gallery-block__video">
@@ -450,7 +463,8 @@
 		<div class="inner">
 			<div class="heading">
 				<div class="heading-bg">
-					<img src="<%= RELATIVE_PATH %>img/heading-04.png" alt="Hoạt động đặc sắc">
+					<img src="<%= RELATIVE_PATH %>img/heading-04.png" alt="Hoạt động đặc sắc" class="pc">
+					<img src="<%= RELATIVE_PATH %>img/heading-04-sp.png" alt="Hoạt động đặc sắc" class="sp">
 				</div>
 			</div>
 			<ul class="work-banner">

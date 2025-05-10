@@ -18,6 +18,9 @@
 				<img src="./img/logo.png" alt="Võ Hiệp Truyền Kỳ">
 			</a>
 			<nav class="header-nav">
+				<div class="header-nav__logo sp-tb">
+					<img src="./img/logo.png" alt="Võ Hiệp Truyền Kỳ">
+				</div>
 				<ul class="header-nav__menu">
 					<li class="header-nav__menu-item">
 						<a href="">Trang chủ</a>
@@ -31,13 +34,36 @@
 					<li class="header-nav__menu-item">
 						<a href="">Hotline</a>
 					</li>
+					<li class="header-nav__menu-item sp-tb">
+						<span>Đăng ký 3c ID</span>
+					</li>
+				</ul>
+				<ul class="header-nav__sns sp-tb">
+					<li>
+						<a href="" target="_blank">
+							<img src="./img/icon-youtube.png" alt="youtube">
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<img src="./img/icon-facebook.png" alt="facebook">
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<img src="./img/icon-group.png" alt="group">
+						</a>
+					</li>
 				</ul>
 			</nav>
+			<a href="" class="header-btn sp-tb">
+				<span>Đăng ký 3c ID</span>
+			</a>
 			<span class="js-mobile">
 				<span></span>
 			</span>
 			<div class="float-right">
-				<div class="float-right__menu">
+				<div class="float-right__menu pc-tb">
 					<img src="./img/bg-menu.png" alt="Võ Hiệp Truyền Kỳ">
 					<ul>
 						<li>
@@ -57,24 +83,25 @@
 						</li>
 					</ul>
 				</div>
-				<a href="/" class="float-right__top">
+				<a href="" class="float-right__top js-backtop">
 					<img src="./img/top.png" alt="Top" class="img-01">
 					<img src="./img/top-hv.png" alt="Top" class="img-02">
 				</a>
-				<div class="float-right__gift">
-					<img src="./img/float-right-gift.png" alt="Quà Thái Hư">
-					<a href="" class="c-btn__01">
-						<span>Nhận Ngay</span>
-					</a>
-				</div>
+			</div>
+			<div class="float-left pc-tb">
+				<img src="./img/float-right-gift.png" alt="Quà Thái Hư">
+				<a href="" class="c-btn__01">
+					<span>Nhận Ngay</span>
+				</a>
 			</div>
 		</header>
 		<main class="page-index">
 			<section class="sec-mv">
+				<div class="mv-video">
+					<video class="pc" src="./img/mv.mp4" loop autoplay muted webkit-playsinline playsinline></video>
+					<video class="sp" src="./img/mv-sp.mp4" loop autoplay muted webkit-playsinline playsinline></video>
+				</div>
 				<div class="mv-block">
-					<h1 class="mv-block__ct">
-						<img src="./img/mv-note.png" alt="Võ Hiệp Truyền Kỳ II">
-					</h1>
 					<ul class="mv-block__menu">
 						<li class="mv-block__menu-item">
 							<a href="" class="c-btn__01">
@@ -83,7 +110,7 @@
 							</a>
 						</li>
 						<li class="mv-block__menu-item">
-							<a href="" class="c-btn__01">
+							<a href="" class="c-btn__01 js-popup-ct">
 								<span class="c-btn__01-icon"><img src="./img/icon-02.png" alt="icon"></span>
 								<span> thông tin<br>
 									<span>alpha test</span>
@@ -91,7 +118,7 @@
 							</a>
 						</li>
 						<li class="mv-block__menu-item">
-							<a href="" class="c-btn__01">
+							<a href="" class="c-btn__01 js-popup-noti">
 								<span class="c-btn__01-icon"><img src="./img/icon-03.png" alt="icon"></span>
 								<span>Tải Game</span>
 							</a>
@@ -104,7 +131,8 @@
 					<div class="gift-block">
 						<div class="heading">
 							<div class="heading-bg">
-								<img src="./img/heading-01.png" alt="hẹn ước võ hiệp - quà quý trao tay">
+								<img src="./img/heading-01.png" alt="hẹn ước võ hiệp - quà quý trao tay" class="pc">
+								<img src="./img/heading-01-sp.png" alt="hẹn ước võ hiệp - quà quý trao tay" class="sp">
 							</div>
 						</div>
 						<div class="gift-block__view">
@@ -117,9 +145,10 @@
 								<span class="gift-block__show-line--custom" style="width: 40%"></span>
 							</div>
 							<ul class="gift-block__list">
-								<li class="gift-block__list-item">
+								<li class="gift-block__list-item js-popup-gift">
 									<div class="gift-block__list-box">
-										<img src="./img/item-gift.png" alt="line">
+										<img src="./img/item-gift.png" alt="img" class="pc">
+										<img src="./img/item-gift-sp.png" alt="img" class="sp">
 									</div>
 									<div class="gift-block__list-ct"> quà mốc <span>5000</span>
 									</div>
@@ -127,9 +156,10 @@
 										<img src="./img/gift-01.png" alt="gift">
 									</div>
 								</li>
-								<li class="gift-block__list-item">
+								<li class="gift-block__list-item js-popup-noti02">
 									<div class="gift-block__list-box">
-										<img src="./img/item-gift.png" alt="line">
+										<img src="./img/item-gift.png" alt="img" class="pc">
+										<img src="./img/item-gift-sp.png" alt="img" class="sp">
 									</div>
 									<div class="gift-block__list-ct"> quà mốc <span>10000</span>
 									</div>
@@ -139,7 +169,8 @@
 								</li>
 								<li class="gift-block__list-item">
 									<div class="gift-block__list-box">
-										<img src="./img/item-gift.png" alt="line">
+										<img src="./img/item-gift.png" alt="img" class="pc">
+										<img src="./img/item-gift-sp.png" alt="img" class="sp">
 									</div>
 									<div class="gift-block__list-ct"> quà mốc <span>20000</span>
 									</div>
@@ -149,7 +180,8 @@
 								</li>
 								<li class="gift-block__list-item">
 									<div class="gift-block__list-box">
-										<img src="./img/item-gift.png" alt="line">
+										<img src="./img/item-gift.png" alt="img" class="pc">
+										<img src="./img/item-gift-sp.png" alt="img" class="sp">
 									</div>
 									<div class="gift-block__list-ct"> quà mốc <span>30000</span>
 									</div>
@@ -159,7 +191,8 @@
 								</li>
 								<li class="gift-block__list-item">
 									<div class="gift-block__list-box">
-										<img src="./img/item-gift.png" alt="line">
+										<img src="./img/item-gift.png" alt="img" class="pc">
+										<img src="./img/item-gift-sp.png" alt="img" class="sp">
 									</div>
 									<div class="gift-block__list-ct"> quà mốc <span>50000</span>
 									</div>
@@ -169,7 +202,7 @@
 								</li>
 							</ul>
 						</div>
-						<a href="" class="c-btn__01">
+						<a href="" class="c-btn__01 js-popup-forget">
 							<span>Hẹn ước<span>&nbsp;ngay</span></span>
 						</a>
 					</div>
@@ -179,13 +212,14 @@
 				<div class="inner">
 					<div class="heading">
 						<div class="heading-bg">
-							<img src="./img/heading-02.png" alt="thái hư giáng thế - vạn bảo quy lai">
+							<img src="./img/heading-02.png" alt="thái hư giáng thế - vạn bảo quy lai" class="pc">
+							<img src="./img/heading-02-sp.png" alt="thái hư giáng thế - vạn bảo quy lai" class="sp">
 						</div>
 					</div>
 					<div class="procedure-heading">
 						<div class="procedure-box">
 							<p>Xin vui lòng đăng nhập để tham gia sự kiện này</p>
-							<a href="" class="procedure-box__btn">Đăng nhập</a>
+							<a href="" class="procedure-box__btn js-popup-login">Đăng nhập</a>
 						</div>
 						<div class="procedure-box">
 							<div class="procedure-box__left"> Xin chào,<span>võhiệptruyềnkỳ01</span>
@@ -199,10 +233,10 @@
 										<a href="" class="procedure-box__btn">Thể lệ</a>
 									</li>
 									<li>
-										<a href="" class="procedure-box__btn">Nhận lượt</a>
+										<a href="" class="procedure-box__btn js-popup-task">Nhận lượt</a>
 									</li>
 									<li>
-										<a href="" class="procedure-box__btn">Lịch sử</a>
+										<a href="" class="procedure-box__btn js-popup-history">Lịch sử</a>
 									</li>
 								</ul>
 							</div>
@@ -212,11 +246,12 @@
 						<div class="procedure-show">
 							<div class="procedure-show__item procedure-show__item--left">
 								<div class="procedure-show__bg">
-									<img src="./img/item-left.png" alt="img">
+									<img src="./img/item-left.png" alt="img" class="pc">
+									<img src="./img/item-left-sp.png" alt="img" class="sp">
 									<div class="procedure-show__block">
 										<h3 class="procedure-show__block-ttl"> cây bát nhã nhỏ </h3>
 										<div class="procedure-show__block-img">
-											<img src="./img/tree-lv2.png" alt="img">
+											<img src="./img/cayvua.gif" alt="img">
 										</div>
 										<div class="procedure-show__block-note"> Độ trưởng thành <span>3/5</span>
 										</div>
@@ -228,11 +263,12 @@
 							</div>
 							<div class="procedure-show__item procedure-show__item--tight">
 								<div class="procedure-show__bg">
-									<img src="./img/item-right.png" alt="img">
+									<img src="./img/item-right.png" alt="img" class="pc">
+									<img src="./img/item-right-sp.png" alt="img" class="sp">
 									<div class="procedure-show__block">
 										<h3 class="procedure-show__block-ttl"> cây bát nhã Lớn </h3>
 										<div class="procedure-show__block-img">
-											<img src="./img/tree-lv3.png" alt="img">
+											<img src="./img/cayto.gif" alt="img">
 										</div>
 										<div class="procedure-show__block-note"> Độ trưởng thành <span class="c-fc--green">5/5</span>
 										</div>
@@ -243,8 +279,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="procedure-show__bg">
-							<img src="./img/procedure-af.png" alt="img">
+						<div class="procedure-show__custom">
+							<img src="./img/procedure-af.png" alt="img" class="pc">
+							<img src="./img/procedure-af-sp.png" alt="img" class="sp">
 						</div>
 					</div>
 				</div>
@@ -253,7 +290,8 @@
 				<div class="inner">
 					<div class="heading mb0">
 						<div class="heading-bg">
-							<img src="./img/heading-03.png" alt="thất đại môn phái">
+							<img src="./img/heading-03.png" alt="thất đại môn phái" class="pc">
+							<img src="./img/heading-03-sp.png" alt="thất đại môn phái" class="sp">
 						</div>
 					</div>
 					<div class="gallery-show">
@@ -346,7 +384,7 @@
 									<div class="gallery-block__bg-show">
 										<img src="./img/bg-show.png" alt="img">
 									</div>
-									<div class="gallery-block__img">
+									<div class="gallery-block__img gallery-block__img--04">
 										<img src="./img/show-04.png" alt="img">
 									</div>
 									<div class="gallery-block__video">
@@ -370,7 +408,7 @@
 									<div class="gallery-block__bg-show">
 										<img src="./img/bg-show.png" alt="img">
 									</div>
-									<div class="gallery-block__img gallery-block__img--othe">
+									<div class="gallery-block__img gallery-block__img--05">
 										<img src="./img/show-05.png" alt="img">
 									</div>
 									<div class="gallery-block__video">
@@ -394,7 +432,7 @@
 									<div class="gallery-block__bg-show">
 										<img src="./img/bg-show.png" alt="img">
 									</div>
-									<div class="gallery-block__img">
+									<div class="gallery-block__img gallery-block__img--06">
 										<img src="./img/show-06.png" alt="img">
 									</div>
 									<div class="gallery-block__video">
@@ -418,7 +456,7 @@
 									<div class="gallery-block__bg-show">
 										<img src="./img/bg-show.png" alt="img">
 									</div>
-									<div class="gallery-block__img">
+									<div class="gallery-block__img gallery-block__img--07">
 										<img src="./img/show-07.png" alt="img">
 									</div>
 									<div class="gallery-block__video">
@@ -478,7 +516,8 @@
 				<div class="inner">
 					<div class="heading">
 						<div class="heading-bg">
-							<img src="./img/heading-04.png" alt="Hoạt động đặc sắc">
+							<img src="./img/heading-04.png" alt="Hoạt động đặc sắc" class="pc">
+							<img src="./img/heading-04-sp.png" alt="Hoạt động đặc sắc" class="sp">
 						</div>
 					</div>
 					<ul class="work-banner">
@@ -770,7 +809,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popup active" id="popup-history">
+		<div class="popup" id="popup-history">
 			<div class="popup-show popup-show--nd">
 				<div class="popup-show__close"><img src="./img/close.png" alt="close"></div>
 				<div class="popup-show__ct popup-show__ct--nd">
@@ -853,6 +892,83 @@
 						<div class="popup-show__navigation">
 							<a href="" class="popup-show__navigation-prev">Trang trước</a>
 							<a href="" class="popup-show__navigation-next">Trang kế</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-noti">
+			<div class="popup-show popup-show--noti">
+				<div class="popup-show__close"><img src="./img/close.png" alt="close"></div>
+				<div class="popup-show__ct popup-show__ct--gift">
+					<h3 class="popup-show__ct-ttl popup-show__ct-ttl--small">
+						<span>Thông báo</span>
+					</h3>
+					<div class="popup-show__noti">
+						<p> Link tải game sẽ được cập nhật trong một vài ngày tới, Đại Hiệp nhớ thường xuyên theo dõi tin tức ở Trang Teaser và Fanpage nhé! </p>
+						<a href="" class="c-btn__02">
+							<span>Đồng ý</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-noti--gift">
+			<div class="popup-show popup-show--noti">
+				<div class="popup-show__close"><img src="./img/close.png" alt="close"></div>
+				<div class="popup-show__ct popup-show__ct--gift">
+					<h3 class="popup-show__ct-ttl popup-show__ct-ttl--small">
+						<span>Thông báo</span>
+					</h3>
+					<div class="popup-show__noti">
+						<p> Chúc mừng Đại Hiệp<br> đã nhận được phần thưởng </p>
+						<img src="./img/gift-06.png" alt="close">
+						<p><strong>Kim Mạch Dao Quang (khóa) X2</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-login">
+			<div class="popup-show popup-show--gift">
+				<div class="popup-show__close"><img src="./img/close.png" alt="close"></div>
+				<div class="popup-show__ct popup-show__ct--gift">
+					<h3 class="popup-show__ct-ttl popup-show__ct-ttl--small">
+						<span>Đăng nhập</span>
+					</h3>
+					<div class="popup-show__login">
+						<input type="text" class="form-control" placeholder="Số Điện Thoại/ Email">
+						<input type="password" class="form-control" placeholder="Password">
+						<div class="popup-show__login-sub popup-show__login-sub--login">
+							<button type="button" class="c-btn__03">
+								<span>Đăng Nhập</span>
+							</button>
+						</div>
+						<div class="popup-show__login-note">
+							<a href="">Quên mật khẩu?</a>
+							<a href="">Đăng ký</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-forget">
+			<div class="popup-show popup-show--gift">
+				<div class="popup-show__close"><img src="./img/close.png" alt="close"></div>
+				<div class="popup-show__ct popup-show__ct--gift">
+					<h3 class="popup-show__ct-ttl popup-show__ct-ttl--small">
+						<span>Hẹn ước</span>
+					</h3>
+					<div class="popup-show__login">
+						<input type="text" class="form-control" placeholder="Số Điện Thoại/ Email">
+						<input type="text" class="form-control" placeholder="Email">
+						<div class="pure-list__input">
+							<input name="checkbox" type="checkbox" checked="checked">
+							<span>Đồng ý thu thập thông tin tài khoản cá nhân và chấp nhận tin nhắn về phát thưởng.</span>
+						</div>
+						<div class="popup-show__login-sub">
+							<button type="button" class="c-btn__02">
+								<span>Hẹn ước</span>
+							</button>
 						</div>
 					</div>
 				</div>

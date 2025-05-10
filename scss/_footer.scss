@@ -8,6 +8,10 @@
 		background: url(../img/footer-bg.png) no-repeat;
 		background-size: cover;
 		padding: 200px 0 45px;
+		@include mq(){
+			background: url(../img/footer-bg-sp.png) no-repeat;
+			background-size: cover;
+		}
 		.inner{
 			position: relative;
 			z-index: 2;
@@ -18,10 +22,17 @@
 		&__logo{
 			display: block;
 			width: 234px;
+			@include mq(){
+				width: vwsp(190);
+			}
 		}
 		&__ct{
 			width: calc(100% - 234px);
 			padding: 5px 0 0 40px;
+			@include mq(){
+				width: calc(100% - vwsp(190));
+				padding: 0 0 0 vwsp(30);
+			}
 			&-ttl{
 				display: block;
 				@include font-size(34);
@@ -29,19 +40,34 @@
 				font-weight: bold;
 				color: #323e3a;
 				margin-bottom: 15px;
+				@include mq(){
+					font-size: vwsp(30);
+				}
 			}
 			&-app{
 				@include flex(0,0,wrap);
 				&-list{
 					width: 345px;
+					@include mq(){
+						width: vwsp(300);
+					}
 					.c-btn__02{
 						margin-bottom: 20px;
+						@include mq(){
+							font-size: vwsp(17);
+							height: vwsp(62);
+							margin-bottom: vwsp(6);
+						}
 					}
 
 				}
 				&-note{
 					width: 134px;
 					margin-left: 10px;
+					@include mq(){
+						width: vwsp(108);
+						margin-left: vwsp(15);
+					}
 				}
 			}
 
@@ -54,6 +80,9 @@
 		text-align: center;
 		background: #1b2320;
 		padding: 50px 15px;
+		@include mq(){
+			font-size: vwsp(25);
+		}
 	}
 }
 

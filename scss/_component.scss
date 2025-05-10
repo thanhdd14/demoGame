@@ -107,6 +107,13 @@ Component
 		position: relative;
 		background: url("../img/btn.png")no-repeat;
 		background-size: 100%;
+		@include mq(){
+			max-width: vwsp(394);
+			height: vwsp(97);
+			font-size: vwsp(26);
+			background: url("../img/btn-sp.png")no-repeat;
+			background-size: 100%;
+		}
 		>span{
 			display: block;
 			text-shadow: 2px 0 4px black;
@@ -122,8 +129,12 @@ Component
 		&-icon{
 			position: absolute;
 			width: 17%;
-			left: 35px;
+			left: 9%;
 			@include v-align;
+			@include mq(){
+				left: 7%;
+				max-width: vwsp(63);
+			}
 		}
 	}
 	&__02{
@@ -140,6 +151,10 @@ Component
 		position: relative;
 		background: url("../img/btn-02.png")no-repeat;
 		background-size: 100%;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		@include smooth-transition;
 		>span{
 			display: block;
 			span{
@@ -157,11 +172,27 @@ Component
 		&-icon{
 			position: absolute;
 			width: 17%;
-			left: 35px;
+			left: 6%;
 			@include v-align;
 		}
 	}
-
+	&__03{
+		@include flex(center,center,wrap);
+		@include font-size(20);
+		font-weight: bold;
+		height: 45px;
+		border: none;
+		outline: none;
+		color: white;
+		@include smooth-transition;
+		border-radius: 10px;
+		background: #4ab176;
+		cursor: pointer;
+		width: 100%;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
 }
 
 
