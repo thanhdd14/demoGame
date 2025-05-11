@@ -55,6 +55,17 @@
 		&--gift,&--noti{
 			max-width: 440px;
 		}
+		&--ytb{
+			max-width: 900px;
+			margin: 0 auto;
+			iframe{
+				width: 100% !important;
+				height: 510px;
+				@include mq(tb){
+					height: 54vw;
+				}
+			}
+		}
 		&__close{
 			position: absolute;
 			top: -33px;
@@ -93,6 +104,7 @@
 				background: url("../img/bg-popup-03.png")no-repeat;
 				background-size: 100% 100%;
 			}
+
 			&-ttl{
 				@include flex(center,center,wrap);
 				max-width: 672px;
@@ -358,11 +370,23 @@
 		}
 		&__login{
 			padding: 20px;
-			.form-control{
+			&-item{
+				position: relative;
 				margin-bottom: 20px;
+				@include mq(){
+					margin-bottom: vwsp(20);
+				}
 				&:last-child{
 					margin-bottom: 0;
 				}
+			}
+			&-sms{
+				position: absolute;
+				@include v-align;
+				right: 10px;
+				color: #6c6c6c;
+				text-transform: uppercase;
+				text-decoration: underline;
 			}
 			&-note{
 				@include flex(between,center,wrap);
@@ -384,6 +408,7 @@
 				}
 			}
 		}
+
 	}
 }
 .js-bar,.slimScrollDiv{

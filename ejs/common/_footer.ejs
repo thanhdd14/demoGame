@@ -74,7 +74,14 @@
 	</a>
 </div>
 
-
+<div class="popup " id="popup-youtube">
+	<div class="popup-show popup-show--ytb">
+		<div class="popup-show__close"><img src="<%= RELATIVE_PATH %>img/close.png" alt="close"></div>
+		<div class="popup-show__ytb">
+			<iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/3lJKGY7nzRE?si=M8xVnQelwbUWORD9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
 <div class="popup " id="popup-ct">
 	<div class="popup-show popup-show--nd">
 		<div class="popup-show__close"><img src="<%= RELATIVE_PATH %>img/close.png" alt="close"></div>
@@ -573,8 +580,23 @@
 				<span>Hẹn ước</span>
 			</h3>
 			<div class="popup-show__login">
-				<input type="text" class="form-control" placeholder="Số Điện Thoại/ Email">
-				<input type="text" class="form-control" placeholder="Email">
+				<div class="popup-show__login-item">
+					<input type="text" class="form-control" placeholder="Email">
+				</div>
+				<div class="popup-show__login-item">
+					<input type="text" class="form-control" placeholder="Số Điện Thoại/ Email">
+					<a href="" class="popup-show__login-sms">Gửi Mã</a>
+				</div>
+				<div class="popup-show__login-item">
+					<input type="text" class="form-control" placeholder="Mã OTP">
+					<a href="" class="popup-show__login-sms c-fc--red">Gửi Lại Mã</a>
+				</div>
+				<div class="popup-show__login-item">
+					<input type="password" class="form-control" placeholder="Mật khẩu">
+				</div>
+				<div class="popup-show__login-item">
+					<input type="password" class="form-control" placeholder="Nhập lại mạt khẩu">
+				</div>
 				<div class="pure-list__input">
 					<input name="checkbox" type="checkbox" checked="checked">
 					<span>Đồng ý thu thập thông tin tài khoản cá nhân và chấp nhận tin nhắn về phát thưởng.</span>

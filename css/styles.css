@@ -1593,6 +1593,19 @@ Component
 .popup-show--gift, .popup-show--noti {
   max-width: 440px;
 }
+.popup-show--ytb {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.popup-show--ytb iframe {
+  width: 100% !important;
+  height: 510px;
+}
+@media screen and (max-width: 1024px) {
+  .popup-show--ytb iframe {
+    height: 54vw;
+  }
+}
 .popup-show__close {
   position: absolute;
   top: -33px;
@@ -1975,11 +1988,28 @@ Component
 .popup-show__login {
   padding: 20px;
 }
-.popup-show__login .form-control {
+.popup-show__login-item {
+  position: relative;
   margin-bottom: 20px;
 }
-.popup-show__login .form-control:last-child {
+@media screen and (max-width: 768px) {
+  .popup-show__login-item {
+    margin-bottom: 2.6666666667vw;
+  }
+}
+.popup-show__login-item:last-child {
   margin-bottom: 0;
+}
+.popup-show__login-sms {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
+  color: #6c6c6c;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 .popup-show__login-note {
   display: -ms-flexbox;

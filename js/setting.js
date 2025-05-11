@@ -69,7 +69,28 @@ $(function(){
 $('.popup-show__close').on('click', function(){
     $(".popup").removeClass("active");
     $("html").removeClass("js-locked");
+    // $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 });
+
+$(document).ready(function() {
+    var youTubeUrl = $('.youtube-video').attr('src');
+    //the stop / close button
+    $( '.popup-show__close' ).on( 'click', function(e) {
+        e.preventDefault();
+        $('.youtube-video').attr('src', '');
+        $('.youtube-video').attr('src', youTubeUrl);
+        
+    } );
+});
+
+$('.js-popup-ytb').on('click', function(e){
+    e.preventDefault();
+    $("#popup-youtube").addClass("active");
+    $("html").addClass("js-locked");
+});
+
+
+
 
 $('.js-popup-ct').on('click', function(e){
     e.preventDefault();
