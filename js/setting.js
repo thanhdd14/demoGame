@@ -8,38 +8,6 @@ $('.js-mobile').on('click', function(){
 });
 
 
-// $(document).on("click", function(){
-// 	$("aa").hide();
-// });
-
-// $(window).scroll(function () {
-//     if ($(this).scrollTop() > 10) {
-//         $("#header").addClass("js-fixed");
-//     }
-//     else {
-//         $("#header").removeClass("js-fixed");
-//     }
-// });
-
-//resize slider load page
-// var window_type;
-// var $window = $(window);
-// if ($window.width() <= 1024) {
-//     window_type = 'sp';
-// } else {
-//     window_type = 'pc';
-// }
-// $(window).resize(function() {
-//     if($window.width() <= 1024){
-//         if( (window_type != 'sp') ){
-//             location.reload();
-//         }
-//     }else{
-//         if(window_type != 'pc'){
-//             location.reload();
-//         }
-//     }
-// });
 
 
 
@@ -48,7 +16,7 @@ $('.js-mobile').on('click', function(){
 $(".procedure-show").slick({
   slidesToShow: 2,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
     responsive: [
         {
@@ -70,7 +38,7 @@ $('.gallery-show__for').slick({
     fade: true,
     asNavFor: '.gallery-show__nav',
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     focusOnSelect: true,
     pauseOnHover:false,
 });
@@ -144,7 +112,28 @@ $('.js-popup-history').on('click', function(e){
     $("html").addClass("js-locked");
 });
 
-
+$(function () {
+    var headerHeight = $('#header').outerHeight();
+    var urlHash = location.hash;
+    if (urlHash) {
+        $('body,html').stop().scrollTop(0);
+        setTimeout(function () {
+            var target = $(urlHash);
+            var position = target.offset().top ;
+            $('body,html').stop().animate({scrollTop: position}, 1000);
+        }, 100);
+    }
+    
+    jQuery('.js-scroll').click(function(e) {
+        $(".js-mobile").removeClass("js-mobile--close");
+        $("html").removeClass("js-locked");
+        $(".header-nav").fadeOut();
+        jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top }, 1000);
+        return false;
+        e.preventDefault();
+    });
+    
+});
 
 // $(function () {
 //     objectFitImages('img');

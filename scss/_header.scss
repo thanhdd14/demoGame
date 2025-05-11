@@ -17,7 +17,7 @@
 		display: block;
 		max-width: vw(328);
 		@include mq(){
-			width: vwsp(274);
+			max-width: vwsp(274);
 		}
 	}
 	.header-btn{
@@ -35,6 +35,9 @@
 		@include flex(center,center);
 	}
 	.header-nav{
+		@include mq(tb-min){
+			display: block !important;
+		}
 		@include mq(tb){
 			display: none;
 			position: absolute;

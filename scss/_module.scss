@@ -254,6 +254,9 @@
 			@include font-size(18);
 			text-align: center;
 			color: #263d35;
+			@include mq(){
+				font-size: vwsp(22);
+			}
 			table{
 				width: 100%;
 				margin-bottom: 20px;
@@ -269,6 +272,9 @@
 					}
 					th,td{
 						padding: 10px;
+						@include mq(){
+							padding: vwsp(10);
+						}
 						&:nth-child(1){
 							width: 50px;
 						}
@@ -291,6 +297,11 @@
 				@include font-size(18);
 				position: relative;
 				background: #457b7d;
+				@include mq(){
+					width: vwsp(155);
+					height: vwsp(43);
+					font-size: vwsp(22);
+				}
 			}
 			&-prev{
 				&:before{
@@ -301,6 +312,11 @@
 					padding: 5px;
 					transform: rotate(135deg);
 					margin: 0 10px 0 0;
+					@include mq(){
+						border-width: 0 vwsp(3) vwsp(3) 0;
+						padding: vwsp(5);
+						margin: 0 vwsp(10) 0 0;
+					}
 				}
 			}
 			&-next{
@@ -312,6 +328,11 @@
 					padding: 5px;
 					transform: rotate(-45deg);
 					margin: 0 0 0 10px;
+					@include mq(){
+						border-width: 0 vwsp(3) vwsp(3) 0;
+						padding: vwsp(5);
+						margin: 0 0 0 vwsp(10) ;
+					}
 				}
 			}
 		}

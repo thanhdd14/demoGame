@@ -26,16 +26,13 @@
 						<a href="">Trang chủ</a>
 					</li>
 					<li class="header-nav__menu-item">
-						<a href="">Đặc sắc</a>
+						<a href="#work" class="js-scroll">Đặc sắc</a>
 					</li>
 					<li class="header-nav__menu-item">
 						<a href="">Cộng đồng</a>
 					</li>
 					<li class="header-nav__menu-item">
 						<a href="">Hotline</a>
-					</li>
-					<li class="header-nav__menu-item sp-tb">
-						<span>Đăng ký 3c ID</span>
 					</li>
 				</ul>
 				<ul class="header-nav__sns sp-tb">
@@ -56,7 +53,7 @@
 					</li>
 				</ul>
 			</nav>
-			<a href="" class="header-btn sp-tb">
+			<a href="" class="header-btn sp-tb js-popup-forget">
 				<span>Đăng ký 3c ID</span>
 			</a>
 			<span class="js-mobile">
@@ -67,7 +64,7 @@
 					<img src="./img/bg-menu.png" alt="Võ Hiệp Truyền Kỳ">
 					<ul>
 						<li>
-							<a href="" class="c-btn__02">
+							<a href="" class="c-btn__02 js-popup-forget">
 								<span>Đăng ký 3C ID</span>
 							</a>
 						</li>
@@ -90,7 +87,7 @@
 			</div>
 			<div class="float-left pc-tb">
 				<img src="./img/float-right-gift.png" alt="Quà Thái Hư">
-				<a href="" class="c-btn__01">
+				<a href="#procedure" class="c-btn__01 js-scroll">
 					<span>Nhận Ngay</span>
 				</a>
 			</div>
@@ -102,9 +99,12 @@
 					<video class="sp" src="./img/mv-sp.mp4" loop autoplay muted webkit-playsinline playsinline></video>
 				</div>
 				<div class="mv-block">
+					<div class="mv-block__clip">
+						<img src="./img/clip.png" alt="icon">
+					</div>
 					<ul class="mv-block__menu">
 						<li class="mv-block__menu-item">
-							<a href="" class="c-btn__01">
+							<a href="#gift" class="c-btn__01 js-scroll">
 								<span class="c-btn__01-icon"><img src="./img/icon-01.png" alt="icon"></span>
 								<span>Đăng ký<span>&nbsp;sớm</span></span>
 							</a>
@@ -128,7 +128,7 @@
 			</section>
 			<section class="sec-gift">
 				<div class="inner">
-					<div class="gift-block">
+					<div class="gift-block" id="gift">
 						<div class="heading">
 							<div class="heading-bg">
 								<img src="./img/heading-01.png" alt="hẹn ước võ hiệp - quà quý trao tay" class="pc">
@@ -243,7 +243,7 @@
 						</div>
 					</div>
 					<div class="procedure-block">
-						<div class="procedure-show">
+						<div class="procedure-show" id="procedure">
 							<div class="procedure-show__item procedure-show__item--left">
 								<div class="procedure-show__bg">
 									<img src="./img/item-left.png" alt="img" class="pc">
@@ -302,11 +302,11 @@
 										<img src="./img/item-01.png" alt="img">
 										<div class="gallery-block__ttl-note">
 											<p>
-												<strong>Hệ phái:</strong>Võ tông , Thiền Tông, Tục Gia </p>
+												<strong>Hệ phái:</strong>&nbsp; Võ Tông, Thiền Tông, Tục Gia </p>
 											<p>
-												<strong>Tuyệt Học:</strong>Như Lai Thần Chưởng, Kim Cang Phục Ma,... </p>
+												<strong>Tuyệt Học:</strong>&nbsp; Như Lai Thần Chưởng, Tẩy Tủy Kinh, Dịch Cân Kinh </p>
 											<p>
-												<strong>Vũ Khí:</strong>Thiết Thủ , Côn , Đao, Trượng </p>
+												<strong>Vũ Khí:</strong>&nbsp; Thiết Thủ, Trượng, Côn Dài, Đao </p>
 										</div>
 									</div>
 									<div class="gallery-block__bg-show">
@@ -326,11 +326,11 @@
 										<img src="./img/item-02.png" alt="img">
 										<div class="gallery-block__ttl-note">
 											<p>
-												<strong>Hệ phái:</strong>Võ tông , Thiền Tông, Tục Gia </p>
+												<strong>Hệ phái:</strong>&nbsp; Tĩnh Y, Ô Y </p>
 											<p>
-												<strong>Tuyệt Học:</strong>Như Lai Thần Chưởng, Kim Cang Phục Ma,... </p>
+												<strong>Tuyệt Học:</strong>&nbsp; Giáng Long Thập Bát Chưởng, Đả Cẩu Côn Pháp </p>
 											<p>
-												<strong>Vũ Khí:</strong>Thiết Thủ , Côn , Đao, Trượng </p>
+												<strong>Vũ Khí:</strong>&nbsp; Thiết Thủ, Côn Dài </p>
 										</div>
 									</div>
 									<div class="gallery-block__bg-show">
@@ -350,11 +350,11 @@
 										<img src="./img/item-03.png" alt="img">
 										<div class="gallery-block__ttl-note">
 											<p>
-												<strong>Hệ phái:</strong>Võ tông , Thiền Tông, Tục Gia </p>
+												<strong>Hệ phái:</strong>&nbsp; Đạo Gia, Tục Gia </p>
 											<p>
-												<strong>Tuyệt Học:</strong>Như Lai Thần Chưởng, Kim Cang Phục Ma,... </p>
+												<strong>Tuyệt Học:</strong>&nbsp; Vô Thượng Thái Cực Kiếm, Thái Cực Thần Công </p>
 											<p>
-												<strong>Vũ Khí:</strong>Thiết Thủ , Côn , Đao, Trượng </p>
+												<strong>Vũ Khí:</strong>&nbsp; Kiếm, Bút </p>
 										</div>
 									</div>
 									<div class="gallery-block__bg-show">
@@ -374,11 +374,11 @@
 										<img src="./img/item-04.png" alt="img">
 										<div class="gallery-block__ttl-note">
 											<p>
-												<strong>Hệ phái:</strong>Võ tông , Thiền Tông, Tục Gia </p>
+												<strong>Hệ phái:</strong>&nbsp; Thương Kỵ, Cung Kỵ </p>
 											<p>
-												<strong>Tuyệt Học:</strong>Như Lai Thần Chưởng, Kim Cang Phục Ma,... </p>
+												<strong>Tuyệt Học:</strong>&nbsp; Liên Hoàn Toàn Long Thương, Bá Vương Tường Phụng Tiễn </p>
 											<p>
-												<strong>Vũ Khí:</strong>Thiết Thủ , Côn , Đao, Trượng </p>
+												<strong>Vũ Khí:</strong>&nbsp; Thương, Cung </p>
 										</div>
 									</div>
 									<div class="gallery-block__bg-show">
@@ -398,11 +398,11 @@
 										<img src="./img/item-05.png" alt="img">
 										<div class="gallery-block__ttl-note">
 											<p>
-												<strong>Hệ phái:</strong>Võ tông , Thiền Tông, Tục Gia </p>
+												<strong>Hệ phái:</strong>&nbsp; Tà Độc, Hiệp Độc </p>
 											<p>
-												<strong>Tuyệt Học:</strong>Như Lai Thần Chưởng, Kim Cang Phục Ma,... </p>
+												<strong>Tuyệt Học:</strong>&nbsp; Vô Ảnh Ma Cổ, Vô Thiên Ma Công </p>
 											<p>
-												<strong>Vũ Khí:</strong>Thiết Thủ , Côn , Đao, Trượng </p>
+												<strong>Vũ Khí:</strong>&nbsp; Trảo, Song Đao </p>
 										</div>
 									</div>
 									<div class="gallery-block__bg-show">
@@ -422,11 +422,11 @@
 										<img src="./img/item-06.png" alt="img">
 										<div class="gallery-block__ttl-note">
 											<p>
-												<strong>Hệ phái:</strong>Võ tông , Thiền Tông, Tục Gia </p>
+												<strong>Hệ phái:</strong>&nbsp; Đường Môn Châm </p>
 											<p>
-												<strong>Tuyệt Học:</strong>Như Lai Thần Chưởng, Kim Cang Phục Ma,... </p>
+												<strong>Tuyệt Học:</strong>&nbsp; Hấp Tinh Trận </p>
 											<p>
-												<strong>Vũ Khí:</strong>Thiết Thủ , Côn , Đao, Trượng </p>
+												<strong>Vũ Khí:</strong>&nbsp; Phi Châm </p>
 										</div>
 									</div>
 									<div class="gallery-block__bg-show">
@@ -446,11 +446,11 @@
 										<img src="./img/item-07.png" alt="img">
 										<div class="gallery-block__ttl-note">
 											<p>
-												<strong>Hệ phái:</strong>Võ tông , Thiền Tông, Tục Gia </p>
+												<strong>Hệ phái:</strong>&nbsp; Phật Gia, Tục Gia </p>
 											<p>
-												<strong>Tuyệt Học:</strong>Như Lai Thần Chưởng, Kim Cang Phục Ma,... </p>
+												<strong>Tuyệt Học:</strong>&nbsp; Vạn Tướng Thần Công, Thiên Âm Trấn Hồn Khúc </p>
 											<p>
-												<strong>Vũ Khí:</strong>Thiết Thủ , Côn , Đao, Trượng </p>
+												<strong>Vũ Khí:</strong>&nbsp;Kiếm, Cầm </p>
 										</div>
 									</div>
 									<div class="gallery-block__bg-show">
@@ -512,7 +512,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="sec-work">
+			<section class="sec-work" id="work">
 				<div class="inner">
 					<div class="heading">
 						<div class="heading-bg">
