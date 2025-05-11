@@ -48,7 +48,7 @@ $('.js-mobile').on('click', function(){
 $(".procedure-show").slick({
   slidesToShow: 2,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
     responsive: [
         {
@@ -70,7 +70,7 @@ $('.gallery-show__for').slick({
     fade: true,
     asNavFor: '.gallery-show__nav',
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     focusOnSelect: true,
     pauseOnHover:false,
 });

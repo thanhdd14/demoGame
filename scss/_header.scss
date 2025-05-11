@@ -6,7 +6,7 @@
 	left: 0;
 	right: 0;
 	z-index: 999;
-	padding: 18px 15px 17px 27px;
+	padding: vw(18) vw(15) vw(17) vw(27);
 	@include flex(between,start,wrap);
 	@include mq(tb){
 		position: fixed;
@@ -15,7 +15,7 @@
 	}
 	.header-logo{
 		display: block;
-		max-width: 328px;
+		max-width: vw(328);
 		@include mq(){
 			width: vwsp(274);
 		}

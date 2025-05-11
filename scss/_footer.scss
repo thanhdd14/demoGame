@@ -9,6 +9,7 @@
 		background-size: cover;
 		padding: 200px 0 45px;
 		@include mq(){
+			padding: vwsp(200) 0 vwsp(45);
 			background: url(../img/footer-bg-sp.png) no-repeat;
 			background-size: cover;
 		}

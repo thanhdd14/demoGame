@@ -93,8 +93,10 @@
 	background: url(../img/bg-02.png) no-repeat;
 	background-size: cover;
 	background-position: top center;
+	padding: 0 0 80px;
 	margin: -30px 0 0;
 	@include mq(){
+		margin: vwsp(-30) 0 0;
 		background: url(../img/bg-02-sp.png) no-repeat;
 		background-size: cover;
 		background-position: top center;
@@ -116,6 +118,7 @@
 			max-width: vwsp(484);
 			height: vwsp(103);
 			margin-bottom: vwsp(-23);
+			padding: vwsp(15) 0 0;
 		}
 		&-ttl{
 			display: block;
@@ -129,10 +132,14 @@
 			color: #4b504e;
 			@include mq(){
 				font-size: vwsp(22);
+				top: vwsp(-13);
 			}
 			span{
 				background: #e9eff1;
 				padding: 0 20px;
+				@include mq(){
+					padding: 0 vwsp(20);
+				}
 			}
 		}
 		&-number{
@@ -215,6 +222,9 @@
 			font-weight: bold;
 			color: #465750;
 			text-transform: uppercase;
+			@include mq(xl){
+				font-size: xl(15);
+			}
 			@include mq(){
 				top: 39%;
 				font-size: vwsp(15);
@@ -223,6 +233,9 @@
 				display: block;
 				@include font-size(30);
 				padding: 5px 0 0;
+				@include mq(xl){
+					font-size: xl(30);
+				}
 				@include mq(){
 					font-size: vwsp(30);
 					padding: vwsp(5) 0 0;
@@ -268,12 +281,18 @@
 	color: #408765;
 	@include flex(center,center,wrap);
 	padding: 0 20px;
+	@include mq(xl){
+		padding: 0 xl(20);
+		font-size: xl(22);
+		height: xl(86);
+	}
 	@include mq(){
 		background: url("../img/bg-note-02-sp.png")no-repeat;
 		background-size: 100%;
 		height: vwsp(82);
 		font-size: vwsp(22);
 		justify-content: flex-start;
+		padding: 0 vwsp(20);
 		&+ .procedure-box{
 			margin-top: vwsp(50);
 		}
@@ -321,9 +340,15 @@
 		@include v-align;
 		background: url("../img/menu-02.png")no-repeat;
 		background-size: 100%;
+		@include mq(xl){
+			width: xl(170);
+			height: xl(53);
+			right: xl(17);
+		}
 		@include mq(){
 			width: vwsp(150);
 			height: vwsp(49);
+			right: vwsp(17);
 		}
 
 		&:hover{
@@ -342,6 +367,9 @@
 		li{
 			width: 25%;
 			padding: 0 5px;
+			@include mq(xl){
+				padding: 0 xl(5);
+			}
 			@include mq(){
 				padding: 0 vwsp(5);
 			}
@@ -483,6 +511,10 @@
 			display: block;
 			width: 73px;
 			text-align: center;
+			@include mq(xl){
+				font-size: xl(22);
+				width: xl(73);
+			}
 			@include mq(){
 				width: vwsp(73);
 				font-size: vwsp(22);
@@ -510,6 +542,11 @@
 			font-weight: 500;
 			line-height: 1.1;
 			padding: 3px 0 0 0;
+			@include mq(xl){
+				max-width: xl(222);
+				height: xl(53);
+				font-size: xl(15);
+			}
 			@include mq(){
 				bottom: 8%;
 				max-width: 100%;
@@ -521,6 +558,9 @@
 				display: block;
 				@include font-size(30);
 				color: white;
+				@include mq(xl){
+					font-size: xl(30);
+				}
 				@include mq(){
 					font-size: vwsp(36);
 				}
@@ -531,13 +571,19 @@
 			bottom: 6%;
 			left: 0;
 			right: 0;
+			@include mq(xl){
+				height: xl(83);
+				font-size: xl(26);
+			}
 			@include mq(){
 				bottom: -21%;
 			}
 		}
 	}
 	&__custom{
-		margin: vwsp(-144) 0 0;
+		@include mq(){
+			margin: vwsp(-144) 0 0;
+		}
 	}
 }
 .sec-gallery{
@@ -556,6 +602,8 @@
 		background: url(../img/bg-04.png) no-repeat;
 		background-size: cover;
 		@include mq(){
+			top: vwsp(-73);
+			bottom: vwsp(-70);
 			background: url(../img/bg-04-sp.png) no-repeat;
 			background-size: cover;
 		}
@@ -569,7 +617,11 @@
 		position: absolute;
 		top: -174px;
 		left: 0;
+		@include mq(xl){
+			top: xl(-174);
+		}
 		@include mq(){
+			top: vwsp(-174);
 			width: 50%;
 			height: 50%;
 			left: -21%;
@@ -752,6 +804,9 @@
 		position: relative;
 		z-index: 2;
 		width: 222px;
+		@include mq(xl){
+			width: xl(222);
+		}
 		@include mq(){
 			position: absolute;
 			bottom: 0;
@@ -767,6 +822,12 @@
 			font-size: 1.5rem;
 			font-weight: 500;
 			color: #3c3c3c;
+			@include mq(xl){
+				font-size: xl(15);
+				top: xl(215);
+				left: xl(15);
+				right: xl(15);
+			}
 			@include mq(){
 				top: vwsp(200);
 				left: vwsp(15);
@@ -781,6 +842,10 @@
 				height: 43px;
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
+				@include mq(xl){
+					height: xl(43);
+					margin-bottom: xl(13);
+				}
 				@include mq(){
 					height: vwsp(50);
 					margin-bottom: vwsp(13);
@@ -858,6 +923,9 @@
 .sec-work{
 	padding: 100px 0 230px;
 	z-index: 3;
+	@include mq(){
+		padding: vwsp(100) 0 vwsp(230);
+	}
 	&:before{
 		content: "";
 		position: absolute;
@@ -881,6 +949,9 @@
 .work-banner{
 	position: relative;
 	margin-bottom: 60px;
+	@include mq(){
+		margin-bottom: vwsp(60);
+	}
 	.slick-arrow{
 		width: 58px;
 		height: 68px;
@@ -904,6 +975,9 @@
 	}
 	.slick-list{
 		margin-bottom: 50px;
+		@include mq(){
+			margin-bottom: vwsp(50);
+		}
 	}
 	.slick-dots{
 		position: relative;
@@ -1001,7 +1075,16 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
+	@include mq(){
+		gap: vwsp(20);
+	}
 	li{
+		@include mq(xl){
+			.c-btn__01{
+				height: xl(83);
+				font-size: xl(26);
+			}
+		}
 		@include mq(){
 			.c-btn__01{
 				font-size: vwsp(20);

@@ -111,8 +111,12 @@ $font-basic : 'Beaufort for LOL';
 	$vwSize: ($element-size / 1920) * 100;
 	@return #{$vwSize}vw;
 }
+@function xl($element-size) {
+	$vwSize: ($element-size / 1250) * 100;
+	@return #{$vwSize}vw;
+}
 @function vwsp($element-size) {
-	$vwSize: ($element-size / 768) * 100;
+	$vwSize: ($element-size / 750) * 100;
 	@return #{$vwSize}vw;
 }
 
@@ -204,19 +208,19 @@ $breakpoint-lg: 990px !default;
 
 $breakpoints: (
 		'xs': 'screen and (max-width: 374px)',
-		'sm': 'screen and (max-width: 640px)',
+		'sm': 'screen and (max-width: 400px)',
 		'md': 'screen and (max-width: 768px)',
 		'lg': 'screen and (max-width: 990px)',
 		'tb': 'screen and (max-width: 1024px)',
-		'xl': 'screen and (max-width: 1245px)',
+		'xl': 'screen and (max-width: 1250px)',
 		'lp': 'screen and (max-width: 1440px)',
 		'mac': 'screen and (max-width: 1770px)',
 		'xs-min': 'screen and (min-width: 375px)',
-		'sm-min': 'screen and (min-width: 641px)',
+		'sm-min': 'screen and (min-width: 401px)',
 		'md-min': 'screen and (min-width: 769px)',
 		'lg-min': 'screen and (min-width: 991px)',
 		'tb-min': 'screen and (min-width: 1025px)',
-		'xl-min': 'screen and (min-width: 1246px)',
+		'xl-min': 'screen and (min-width: 1251px)',
 ) !default;
 
 
