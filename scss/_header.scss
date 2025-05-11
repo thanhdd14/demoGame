@@ -197,6 +197,9 @@
 	position: fixed;
 	@include v-align;
 	right: 0;
+	&.fixd{
+		z-index: 999;
+	}
 	@include mq(){
 		top: auto;
 		bottom: 20px;

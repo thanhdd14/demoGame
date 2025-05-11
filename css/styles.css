@@ -2463,6 +2463,9 @@ Component
   transform: translateY(-50%);
   right: 0;
 }
+.float-right.fixd {
+  z-index: 999;
+}
 @media screen and (max-width: 768px) {
   .float-right {
     top: auto;
@@ -3424,12 +3427,12 @@ Component
 }
 
 .sec-gallery {
-  z-index: 2;
   padding: 110px 0;
 }
 @media screen and (max-width: 768px) {
   .sec-gallery {
     padding: 3.6458333333vw 0;
+    z-index: 2;
   }
 }
 .sec-gallery:before {
@@ -3807,11 +3810,11 @@ Component
 
 .sec-work {
   padding: 100px 0 230px;
-  z-index: 3;
 }
 @media screen and (max-width: 768px) {
   .sec-work {
     padding: 13.3333333333vw 0 30.6666666667vw;
+    z-index: 3;
   }
 }
 .sec-work:before {
