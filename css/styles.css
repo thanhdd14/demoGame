@@ -2760,6 +2760,26 @@ Component
     gap: 10px;
   }
 }
+.mv-block__menu-btn {
+  display: block;
+  position: relative;
+}
+.mv-block__menu-btn .img-02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.mv-block__menu-btn:hover .img-01 {
+  opacity: 0;
+  visibility: hidden;
+}
+.mv-block__menu-btn:hover .img-02 {
+  opacity: 1;
+  visibility: visible;
+}
 @media screen and (max-width: 768px) {
   .mv-block__menu {
     display: -webkit-box;
@@ -3836,6 +3856,10 @@ Component
   -o-object-fit: cover;
      object-fit: cover;
   font-family: "object-fit: cover";
+}
+.gallery-block__video video {
+  width: 100%;
+  height: 100%;
 }
 
 .sec-work {
