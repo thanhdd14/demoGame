@@ -3,9 +3,11 @@
 
 .inner {
 	display: block;
-	max-width: 1230px;
-	padding: 0 15px;
+	padding: 0 vw(15);
 	margin: 0 auto;
+	@include mq(md-min){
+		max-width: vw(1230);
+	}
 	@include mq(){
 		padding: 0 vwsp(50);
 	}

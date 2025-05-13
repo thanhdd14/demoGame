@@ -64,7 +64,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			align-items: flex-end;
-			padding: 28px 0 0;
+			padding: vw(28) 0 0;
 			@include mq(tb){
 				display: block;
 				padding: 0;
@@ -83,12 +83,12 @@
 				a{
 					@include mq(tb-min){
 						display: block;
-						@include font-size(16);
+						font-size: vw(16);
 						text-transform: uppercase;
 						line-height: 1.2;
 						font-weight: bold;
 						color: #475053;
-						padding: 0 10px;
+						padding: 0 vw(10);
 					}
 					@include mq(tb){
 						@include flex(center,center);
@@ -197,17 +197,18 @@
 	position: fixed;
 	@include v-align;
 	right: 0;
+	width: vw(360);
 	&.fixd{
 		z-index: 999;
 	}
 	@include mq(){
 		top: auto;
-		bottom: 20px;
+		bottom:  vw(20);
 		transform: translateY(0);
 	}
 	&__menu{
 		position: relative;
-		margin-bottom: 10px;
+		margin-bottom: vw(10);
 		ul{
 			position: absolute;
 			top: 69%;
@@ -219,9 +220,9 @@
 					margin-bottom: 0;
 				}
 				a{
-					@include font-size(16);
+					font-size: vw(16);
 					text-transform: uppercase;
-					height: 47px;
+					height: vw(47);
 					background: url("../img/btn-03.png")no-repeat;
 					background-size: 100%;
 					&:hover{
@@ -234,7 +235,7 @@
 	}
 	&__top{
 		display: block;
-		width: 70px;
+		width: vw(70);
 		position: relative;
 		margin-left: auto;
 		margin-right: 25%;
@@ -270,17 +271,17 @@
 	}
 }
 .float-left{
-	width: 234px;
+	width: vw(234);
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	.c-btn__01{
 		position: absolute;
-		bottom: 42px;
+		bottom: vw(42);
 		right: 11%;
-		font-size: 1.7rem;
-		width: 180px;
-		height: 40px;
+		font-size: vw(17);
+		width: vw(180);
+		height: vw(40);
 	}
 }
 

@@ -1386,12 +1386,12 @@ Component
           align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 83px;
+  height: 4.3229166667vw;
   width: 100%;
-  max-width: 394px;
+  max-width: 20.5208333333vw;
   margin: 0 auto;
   line-height: 1;
-  font-size: 2.6rem;
+  font-size: 1.3541666667vw;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -1448,12 +1448,12 @@ Component
           align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 70px;
+  height: 3.6458333333vw;
   width: 100%;
-  max-width: 345px;
+  max-width: 17.96875vw;
   margin: 0 auto;
   line-height: 1;
-  font-size: 2rem;
+  font-size: 1.0416666667vw;
   text-align: center;
   color: white;
   font-weight: 500;
@@ -1510,9 +1510,9 @@ Component
           align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-size: 2rem;
+  font-size: 1.0416666667vw;
   font-weight: bold;
-  height: 45px;
+  height: 2.34375vw;
   border: none;
   outline: none;
   color: white;
@@ -1531,9 +1531,13 @@ Component
 
 .inner {
   display: block;
-  max-width: 1230px;
-  padding: 0 15px;
+  padding: 0 0.78125vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+  .inner {
+    max-width: 64.0625vw;
+  }
 }
 @media screen and (max-width: 768px) {
   .inner {
@@ -2316,7 +2320,7 @@ Component
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 28px 0 0;
+  padding: 1.4583333333vw 0 0;
 }
 @media screen and (max-width: 1024px) {
   #header .header-nav__menu {
@@ -2341,12 +2345,12 @@ Component
 @media screen and (min-width: 1025px) {
   #header .header-nav__menu-item a {
     display: block;
-    font-size: 1.6rem;
+    font-size: 0.8333333333vw;
     text-transform: uppercase;
     line-height: 1.2;
     font-weight: bold;
     color: #475053;
-    padding: 0 10px;
+    padding: 0 0.5208333333vw;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2492,6 +2496,7 @@ Component
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0;
+  width: 18.75vw;
 }
 .float-right.fixd {
   z-index: 999;
@@ -2499,7 +2504,7 @@ Component
 @media screen and (max-width: 768px) {
   .float-right {
     top: auto;
-    bottom: 20px;
+    bottom: 1.0416666667vw;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
@@ -2507,7 +2512,7 @@ Component
 }
 .float-right__menu {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0.5208333333vw;
 }
 .float-right__menu ul {
   position: absolute;
@@ -2522,9 +2527,9 @@ Component
   margin-bottom: 0;
 }
 .float-right__menu ul li a {
-  font-size: 1.6rem;
+  font-size: 0.8333333333vw;
   text-transform: uppercase;
-  height: 47px;
+  height: 2.4479166667vw;
   background: url("../img/btn-03.png") no-repeat;
   background-size: 100%;
 }
@@ -2534,7 +2539,7 @@ Component
 }
 .float-right__top {
   display: block;
-  width: 70px;
+  width: 3.6458333333vw;
   position: relative;
   margin-left: auto;
   margin-right: 25%;
@@ -2572,18 +2577,18 @@ Component
 }
 
 .float-left {
-  width: 234px;
+  width: 12.1875vw;
   position: fixed;
   bottom: 0;
   left: 0;
 }
 .float-left .c-btn__01 {
   position: absolute;
-  bottom: 42px;
+  bottom: 2.1875vw;
   right: 11%;
-  font-size: 1.7rem;
-  width: 180px;
-  height: 40px;
+  font-size: 0.8854166667vw;
+  width: 9.375vw;
+  height: 2.0833333333vw;
 }
 
 .js-locked {
@@ -2598,12 +2603,12 @@ Component
 #footer {
   position: relative;
   z-index: 9;
-  margin: -112px 0 0;
+  margin: -5.8333333333vw 0 0;
 }
 #footer .footer-app {
   background: url(../img/footer-bg.png) no-repeat;
   background-size: cover;
-  padding: 200px 0 45px;
+  padding: 10.4166666667vw 0 2.34375vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-app {
@@ -2625,7 +2630,7 @@ Component
 }
 #footer .footer-block__logo {
   display: block;
-  width: 234px;
+  width: 12.1875vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-block__logo {
@@ -2633,8 +2638,8 @@ Component
   }
 }
 #footer .footer-block__ct {
-  width: calc(100% - 234px);
-  padding: 5px 0 0 40px;
+  width: calc(100% - 12.65625vw);
+  padding: 0.2604166667vw 0 0 2.0833333333vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-block__ct {
@@ -2644,11 +2649,11 @@ Component
 }
 #footer .footer-block__ct-ttl {
   display: block;
-  font-size: 3.4rem;
+  font-size: 1.7708333333vw;
   text-transform: uppercase;
   font-weight: bold;
   color: #323e3a;
-  margin-bottom: 15px;
+  margin-bottom: 0.78125vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-block__ct-ttl {
@@ -2663,7 +2668,7 @@ Component
   flex-wrap: wrap;
 }
 #footer .footer-block__ct-app-list {
-  width: 345px;
+  width: 17.96875vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-block__ct-app-list {
@@ -2671,7 +2676,7 @@ Component
   }
 }
 #footer .footer-block__ct-app-list .c-btn__02 {
-  margin-bottom: 20px;
+  margin-bottom: 1.0416666667vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-block__ct-app-list .c-btn__02 {
@@ -2681,8 +2686,8 @@ Component
   }
 }
 #footer .footer-block__ct-app-note {
-  width: 134px;
-  margin-left: 10px;
+  width: 6.9791666667vw;
+  margin-left: 0.5208333333vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-block__ct-app-note {
@@ -2691,12 +2696,12 @@ Component
   }
 }
 #footer .footer-note {
-  font-size: 2rem;
+  font-size: 1.0416666667vw;
   color: white;
   line-height: 1.5;
   text-align: center;
   background: #1b2320;
-  padding: 50px 15px;
+  padding: 2.6041666667vw 0.78125vw;
 }
 @media screen and (max-width: 768px) {
   #footer .footer-note {
@@ -2821,7 +2826,7 @@ Component
 
 .heading {
   position: relative;
-  margin-bottom: 36px;
+  margin-bottom: 1.875vw;
 }
 @media screen and (max-width: 768px) {
   .heading {
@@ -2829,7 +2834,7 @@ Component
   }
 }
 .heading-bg {
-  max-width: 894px;
+  max-width: 46.5625vw;
   margin: 0 auto;
 }
 .heading-bg img {
@@ -2849,8 +2854,8 @@ Component
   background: url(../img/bg-02.png) no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 0 0 80px;
-  margin: -30px 0 0;
+  padding: 0 0 4.1666666667vw;
+  margin: -1.5625vw 0 0;
 }
 @media screen and (max-width: 768px) {
   .sec-gift {
@@ -2864,10 +2869,10 @@ Component
 
 .gift-block__view {
   display: block;
-  max-width: 462px;
-  height: 83px;
-  padding: 15px 0 0;
-  margin: 0 auto 90px;
+  max-width: 24.0625vw;
+  height: 4.3229166667vw;
+  padding: 0.78125vw 0 0;
+  margin: 0 auto 4.6875vw;
   position: relative;
   background: url("../img/bg-note.png") no-repeat;
   background-size: 100%;
@@ -2884,10 +2889,10 @@ Component
 .gift-block__view-ttl {
   display: block;
   position: absolute;
-  top: -13px;
+  top: -0.6770833333vw;
   left: 0;
   right: 0;
-  font-size: 2.2rem;
+  font-size: 1.1458333333vw;
   font-weight: bold;
   text-transform: uppercase;
   color: #4b504e;
@@ -2900,7 +2905,7 @@ Component
 }
 .gift-block__view-ttl span {
   background: #e9eff1;
-  padding: 0 20px;
+  padding: 0 1.0416666667vw;
 }
 @media screen and (max-width: 768px) {
   .gift-block__view-ttl span {
@@ -2910,7 +2915,7 @@ Component
 .gift-block__view-number {
   display: block;
   text-align: center;
-  font-size: 5rem;
+  font-size: 2.6041666667vw;
   color: #489e7c;
   line-height: 1;
   font-weight: bold;
@@ -2935,7 +2940,7 @@ Component
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  left: 28px;
+  left: 1.4583333333vw;
   background: #5ca780;
   height: 5px;
 }
@@ -2945,7 +2950,7 @@ Component
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 4%;
     padding: 0 2%;
-    margin: -115px 0 68px;
+    margin: -5.9895833333vw 0 3.5416666667vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2979,9 +2984,9 @@ Component
 }
 @media screen and (min-width: 769px) {
   .gift-block__list-item:nth-child(even) {
-    -webkit-transform: translate(0, 25px);
-        -ms-transform: translate(0, 25px);
-            transform: translate(0, 25px);
+    -webkit-transform: translate(0, 1.3020833333vw);
+        -ms-transform: translate(0, 1.3020833333vw);
+            transform: translate(0, 1.3020833333vw);
   }
 }
 @media screen and (max-width: 768px) {
@@ -3005,17 +3010,12 @@ Component
   top: 35%;
   left: 0;
   right: 0;
-  font-size: 1.5rem;
+  font-size: 0.78125vw;
   line-height: 1;
   text-align: center;
   font-weight: bold;
   color: #465750;
   text-transform: uppercase;
-}
-@media screen and (max-width: 1250px) {
-  .gift-block__list-ct {
-    font-size: 1.2vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .gift-block__list-ct {
@@ -3025,13 +3025,8 @@ Component
 }
 .gift-block__list-ct span {
   display: block;
-  font-size: 3rem;
-  padding: 5px 0 0;
-}
-@media screen and (max-width: 1250px) {
-  .gift-block__list-ct span {
-    font-size: 2.4vw;
-  }
+  font-size: 1.5625vw 0;
+  padding: 0.2604166667vw 0 0;
 }
 @media screen and (max-width: 768px) {
   .gift-block__list-ct span {
@@ -3051,8 +3046,8 @@ Component
   background: url(../img/bg-03.png) no-repeat;
   background-size: cover;
   background-position: top center;
-  margin: -27px 0 0;
-  padding: 88px 0 50px;
+  margin: -1.40625vw 0 0;
+  padding: 4.5833333333vw 0 2.6041666667vw;
 }
 @media screen and (max-width: 768px) {
   .sec-procedure {
@@ -3065,16 +3060,16 @@ Component
 }
 
 .procedure-heading {
-  margin-bottom: 50px;
+  margin-bottom: 2.6041666667vw;
 }
 
 .procedure-box {
   background: url("../img/bg-note-02.png") no-repeat;
   background-size: 100%;
-  height: 86px;
+  height: 4.4791666667vw;
   position: relative;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.1458333333vw;
   font-weight: bold;
   color: #408765;
   display: -ms-flexbox;
@@ -3088,14 +3083,7 @@ Component
           align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0 20px;
-}
-@media screen and (max-width: 1250px) {
-  .procedure-box {
-    padding: 0 1.6vw;
-    font-size: 1.76vw;
-    height: 6.88vw;
-  }
+  padding: 0 1.0416666667vw;
 }
 @media screen and (max-width: 768px) {
   .procedure-box {
@@ -3159,8 +3147,8 @@ Component
 }
 .procedure-box__btn {
   color: #eaf0f2;
-  width: 170px;
-  height: 53px;
+  width: 8.8541666667vw;
+  height: 2.7604166667vw;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -3171,20 +3159,13 @@ Component
   -webkit-box-align: center;
           align-items: center;
   position: absolute;
-  right: 17px;
+  right: 0.8854166667vw;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: url("../img/menu-02.png") no-repeat;
   background-size: 100%;
-}
-@media screen and (max-width: 1250px) {
-  .procedure-box__btn {
-    width: 13.6vw;
-    height: 4.24vw;
-    right: 1.36vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .procedure-box__btn {
@@ -3210,7 +3191,7 @@ Component
           align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -5px;
+  margin: 0 -0.2604166667vw;
 }
 @media screen and (max-width: 768px) {
   .procedure-box__note {
@@ -3219,12 +3200,7 @@ Component
 }
 .procedure-box__note li {
   width: 25%;
-  padding: 0 5px;
-}
-@media screen and (max-width: 1250px) {
-  .procedure-box__note li {
-    padding: 0 0.4vw;
-  }
+  padding: 0 0.2604166667vw;
 }
 @media screen and (max-width: 768px) {
   .procedure-box__note li {
@@ -3277,7 +3253,7 @@ Component
 .procedure-show {
   position: relative;
   z-index: 1;
-  margin-bottom: -18px;
+  margin-bottom: -0.9375vw;
 }
 @media screen and (max-width: 768px) {
   .procedure-show .slick-arrow {
@@ -3376,20 +3352,14 @@ Component
   position: absolute;
   top: 16%;
   left: -9%;
-  font-size: 2.2rem;
+  font-size: 1.1458333333vw;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   line-height: 1.4;
   display: block;
-  width: 73px;
+  width: 3.8020833333vw;
   text-align: center;
-}
-@media screen and (max-width: 1250px) {
-  .procedure-show__block-ttl {
-    font-size: 1.76vw;
-    width: 5.84vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .procedure-show__block-ttl {
@@ -3408,24 +3378,17 @@ Component
   bottom: 25%;
   left: 0;
   right: 0;
-  max-width: 222px;
-  height: 53px;
+  max-width: 11.5625vw;
+  height: 2.7604166667vw;
   margin: 0 auto;
   background: url(../img/bg-note-03.png) no-repeat;
   background-size: 100%;
-  font-size: 1.5rem;
+  font-size: 0.78125vw;
   text-align: center;
   color: #edefc7;
   font-weight: 500;
   line-height: 1.1;
   padding: 3px 0 0 0;
-}
-@media screen and (max-width: 1250px) {
-  .procedure-show__block-note {
-    max-width: 17.76vw;
-    height: 4.24vw;
-    font-size: 1.2vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .procedure-show__block-note {
@@ -3438,13 +3401,8 @@ Component
 }
 .procedure-show__block-note span {
   display: block;
-  font-size: 3rem;
+  font-size: 1.5625vw;
   color: white;
-}
-@media screen and (max-width: 1250px) {
-  .procedure-show__block-note span {
-    font-size: 2.4vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .procedure-show__block-note span {
@@ -3456,12 +3414,6 @@ Component
   bottom: 6%;
   left: 0;
   right: 0;
-}
-@media screen and (max-width: 1250px) {
-  .procedure-show__block .c-btn__01 {
-    height: 6.64vw;
-    font-size: 2.08vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .procedure-show__block .c-btn__01 {
@@ -3477,7 +3429,7 @@ Component
 }
 
 .sec-gallery {
-  padding: 110px 0;
+  padding: 5.7291666667vw 0;
 }
 @media screen and (max-width: 768px) {
   .sec-gallery {
@@ -3488,10 +3440,10 @@ Component
 .sec-gallery:before {
   content: "";
   position: absolute;
-  top: -73px;
+  top: -3.8020833333vw;
   left: 0;
   right: 0;
-  bottom: -70px;
+  bottom: -3.6458333333vw;
   background: url(../img/bg-04.png) no-repeat;
   background-size: cover;
 }
@@ -3505,18 +3457,13 @@ Component
 }
 .sec-gallery:after {
   content: "";
-  width: 360px;
-  height: 250px;
+  width: 18.75vw;
+  height: 13.0208333333vw;
   background: url(../img/item.png) no-repeat;
   background-size: 100%;
   position: absolute;
-  top: -174px;
+  top: -9.0625vw;
   left: 0;
-}
-@media screen and (max-width: 1250px) {
-  .sec-gallery:after {
-    top: -13.92vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .sec-gallery:after {
@@ -3536,7 +3483,7 @@ Component
   }
 }
 .gallery-show__for {
-  margin-bottom: 50px;
+  margin-bottom: 2.6041666667vw;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -3552,7 +3499,7 @@ Component
   }
 }
 .gallery-show__for-item {
-  padding: 160px 0 0;
+  padding: 8.3333333333vw 0 0;
 }
 @media screen and (max-width: 768px) {
   .gallery-show__for-item {
@@ -3574,10 +3521,10 @@ Component
 }
 @media screen and (min-width: 769px) {
   .gallery-show__for .slick-arrow {
-    width: 42px;
-    height: 68px;
+    width: 2.1875vw;
+    height: 3.5416666667vw;
     z-index: 99;
-    top: calc(50% + 80px);
+    top: calc(50% + 4.1666666667vw);
   }
   .gallery-show__for .slick-arrow:before {
     display: none;
@@ -3585,12 +3532,12 @@ Component
   .gallery-show__for .slick-arrow.slick-prev {
     background: url("../img/prev.png") no-repeat;
     background-size: 100%;
-    left: -70px;
+    left: -3.6458333333vw;
   }
   .gallery-show__for .slick-arrow.slick-next {
     background: url("../img/next.png") no-repeat;
     background-size: 100%;
-    right: -70px;
+    right: -3.6458333333vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3619,7 +3566,7 @@ Component
   }
 }
 .gallery-show__nav {
-  padding: 0 168px;
+  padding: 0 8.75vw;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -3629,8 +3576,8 @@ Component
 }
 .gallery-show__nav:before, .gallery-show__nav:after {
   content: "";
-  width: 168px;
-  height: 14px;
+  width: 8.75vw;
+  height: 0.7291666667vw;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -3662,7 +3609,7 @@ Component
 .gallery-show__nav-box {
   cursor: pointer;
   position: relative;
-  max-width: 63px;
+  max-width: 3.28125vw;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -3716,12 +3663,7 @@ Component
 .gallery-block__ttl {
   position: relative;
   z-index: 2;
-  width: 222px;
-}
-@media screen and (max-width: 1250px) {
-  .gallery-block__ttl {
-    width: 17.76vw;
-  }
+  width: 11.5625vw;
 }
 @media screen and (max-width: 768px) {
   .gallery-block__ttl {
@@ -3733,21 +3675,13 @@ Component
 }
 .gallery-block__ttl-note {
   position: absolute;
-  top: 215px;
-  left: 15px;
-  right: 15px;
+  top: 11.1979166667vw;
+  left: 0.78125vw;
+  right: 0.78125vw;
   bottom: 0;
-  font-size: 1.5rem;
+  font-size: 0.78125vw;
   font-weight: 500;
   color: #3c3c3c;
-}
-@media screen and (max-width: 1250px) {
-  .gallery-block__ttl-note {
-    font-size: 1.2vw;
-    top: 17.2vw;
-    left: 1.2vw;
-    right: 1.2vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .gallery-block__ttl-note {
@@ -3758,20 +3692,14 @@ Component
   }
 }
 .gallery-block__ttl-note p {
-  margin-bottom: 13px;
+  margin-bottom: 0.6770833333vw;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   -webkit-line-clamp: 2;
-  max-height: 43px;
+  max-height: 2.2395833333vw;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-}
-@media screen and (max-width: 1250px) {
-  .gallery-block__ttl-note p {
-    max-height: 3.44vw;
-    margin-bottom: 1.04vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .gallery-block__ttl-note p {
@@ -3842,7 +3770,7 @@ Component
   }
 }
 .gallery-block__video {
-  width: calc(100% - 222px);
+  width: calc(100% - 11.5625vw);
   padding: 0 0 0 15%;
 }
 @media screen and (max-width: 768px) {
@@ -3863,7 +3791,7 @@ Component
 }
 
 .sec-work {
-  padding: 100px 0 230px;
+  padding: 5.2083333333vw 0 11.9791666667vw;
 }
 @media screen and (max-width: 768px) {
   .sec-work {
@@ -3894,7 +3822,7 @@ Component
 
 .work-banner {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 3.125vw;
 }
 @media screen and (max-width: 768px) {
   .work-banner {
@@ -3902,8 +3830,8 @@ Component
   }
 }
 .work-banner .slick-arrow {
-  width: 58px;
-  height: 68px;
+  width: 3.0208333333vw;
+  height: 3.5416666667vw;
   z-index: 99;
 }
 @media screen and (max-width: 768px) {
@@ -3917,15 +3845,15 @@ Component
 .work-banner .slick-arrow.slick-prev {
   background: url("../img/prev-02.png") no-repeat;
   background-size: 100%;
-  left: -70px;
+  left: -3.6458333333vw;
 }
 .work-banner .slick-arrow.slick-next {
   background: url("../img/next-02.png") no-repeat;
   background-size: 100%;
-  right: -70px;
+  right: -3.6458333333vw;
 }
 .work-banner .slick-list {
-  margin-bottom: 50px;
+  margin-bottom: 2.6041666667vw;
 }
 @media screen and (max-width: 768px) {
   .work-banner .slick-list {
@@ -3965,21 +3893,21 @@ Component
 .work-banner .slick-dots:before {
   background: url("../img/bf-03.png") no-repeat;
   background-position: top left;
-  background-size: 400px;
+  background-size: 20.8333333333vw;
   left: 0;
 }
 .work-banner .slick-dots:after {
   background: url("../img/af-03.png") no-repeat;
   background-position: top right;
-  background-size: 400px;
+  background-size: 20.8333333333vw;
   right: 0;
 }
 .work-banner .slick-dots li {
-  margin: 0 8px;
+  margin: 0 0.4166666667vw;
 }
 .work-banner .slick-dots li button {
-  width: 37px;
-  height: 37px;
+  width: 1.9791666667vw;
+  height: 1.9270833333vw;
 }
 @media screen and (max-width: 768px) {
   .work-banner .slick-dots li button {
@@ -4005,10 +3933,10 @@ Component
   transition: all 0.3s ease;
 }
 .work-banner .slick-dots li.slick-active button:before {
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
+  top: -0.5208333333vw;
+  left: -0.5208333333vw;
+  right: -0.5208333333vw;
+  bottom: -0.5208333333vw;
   background: url("../img/dos-active.png") no-repeat;
   background-size: 100%;
 }
@@ -4023,7 +3951,7 @@ Component
 .work-banner__item {
   position: relative;
   z-index: 2;
-  padding: 10px;
+  padding: 0.5208333333vw;
 }
 .work-banner__item:before {
   content: "";
@@ -4043,18 +3971,16 @@ Component
 .work-links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 1.0416666667vw;
 }
 @media screen and (max-width: 768px) {
   .work-links {
     gap: 2.6666666667vw;
   }
 }
-@media screen and (max-width: 1250px) {
-  .work-links li .c-btn__01 {
-    height: 6.64vw;
-    font-size: 2.08vw;
-  }
+.work-links li {
+  height: 4.3229166667vw;
+  font-size: 1.3541666667vw;
 }
 @media screen and (max-width: 768px) {
   .work-links li .c-btn__01 {

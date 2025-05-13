@@ -94,12 +94,12 @@ Component
 .c-btn{
 	&__01{
 		@include flex(center,center,wrap);
-		height: 83px;
+		height: vw(83);
 		width: 100%;
-		max-width: 394px;
+		max-width: vw(394);
 		margin: 0 auto;
 		line-height: 1;
-		@include font-size(26);
+		font-size: vw(26);
 		text-align: center;
 		text-transform: uppercase;
 		color: white;
@@ -139,12 +139,12 @@ Component
 	}
 	&__02{
 		@include flex(center,center,wrap);
-		height: 70px;
+		height: vw(70);
 		width: 100%;
-		max-width: 345px;
+		max-width: vw(345);
 		margin: 0 auto;
 		line-height: 1;
-		@include font-size(20);
+		font-size: vw(20);
 		text-align: center;
 		color: white;
 		font-weight: 500;
@@ -183,9 +183,9 @@ Component
 	}
 	&__03{
 		@include flex(center,center,wrap);
-		@include font-size(20);
+		font-size: vw(20);
 		font-weight: bold;
-		height: 45px;
+		height: vw(45);
 		border: none;
 		outline: none;
 		color: white;
