@@ -2498,17 +2498,18 @@ Component
   right: 0;
   width: 18.75vw;
 }
-.float-right.fixd {
-  z-index: 999;
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .float-right {
     top: auto;
     bottom: 1.0416666667vw;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
+    z-index: 99;
   }
+}
+.float-right.fixd {
+  z-index: 999;
 }
 .float-right__menu {
   position: relative;
@@ -2548,6 +2549,7 @@ Component
   .float-right__top {
     width: 9.3333333333vw;
     right: 1.3333333333vw;
+    margin-right: 0;
   }
 }
 .float-right__top img {

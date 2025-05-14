@@ -198,13 +198,14 @@
 	@include v-align;
 	right: 0;
 	width: vw(360);
-	&.fixd{
-		z-index: 999;
-	}
-	@include mq(){
+	@include mq(tb){
 		top: auto;
 		bottom:  vw(20);
 		transform: translateY(0);
+		z-index: 99;
+	}
+	&.fixd{
+		z-index: 999;
 	}
 	&__menu{
 		position: relative;
@@ -242,6 +243,7 @@
 		@include mq(){
 			width: vwsp(70);
 			right: vwsp(10);
+			margin-right: 0;
 		}
 		img{
 			@include smooth-transition;
