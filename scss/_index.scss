@@ -114,8 +114,11 @@
 		margin: 0 vwsp(-50);
 	}
 	&-bg{
-		max-width: vw(894);
+
 		margin: 0 auto;
+		@include mq(md-min){
+			max-width: vw(894);
+		}
 		img{
 			width: 100%;
 		}

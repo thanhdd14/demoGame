@@ -183,9 +183,9 @@ Component
 	}
 	&__03{
 		@include flex(center,center,wrap);
-		font-size: vw(20);
+		font-size: 2rem;
 		font-weight: bold;
-		height: vw(45);
+		height: 45px;
 		border: none;
 		outline: none;
 		color: white;

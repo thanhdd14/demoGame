@@ -1510,9 +1510,9 @@ Component
           align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-size: 1.0416666667vw;
+  font-size: 2rem;
   font-weight: bold;
-  height: 2.34375vw;
+  height: 45px;
   border: none;
   outline: none;
   color: white;
@@ -2834,8 +2834,12 @@ Component
   }
 }
 .heading-bg {
-  max-width: 46.5625vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+  .heading-bg {
+    max-width: 46.5625vw;
+  }
 }
 .heading-bg img {
   width: 100%;
