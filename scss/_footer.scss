@@ -81,8 +81,22 @@
 		text-align: center;
 		background: #1b2320;
 		padding: vw(50) vw(15);
+		@include flex(center,center,wrap);
 		@include mq(){
 			font-size: vwsp(25);
+			padding: 25px 0 30px;
+			p{
+				width: 100%;
+			}
+		}
+		&__logo{
+			display: block;
+			width: vw(100);
+			margin: 0 vw(50) 0 0;
+			@include mq(){
+				width: 50px;
+				margin: 15px auto;
+			}
 		}
 	}
 }
